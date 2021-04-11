@@ -56,12 +56,28 @@
       "oAP" : "\/dev\/content\/hero.html",
       "oF" : 0
     },
+    "\/dev\/content\/hero2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/hero2.html",
+      "oF" : 0
+    },
     "\/dev\/content\/importantinfo.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/importantinfo.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/mainsections.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/mainsections.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
