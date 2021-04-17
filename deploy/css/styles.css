@@ -379,6 +379,10 @@ ul li {
   align-items: center;
 }
 
+img {
+  width: 100%;
+}
+
 /* =============
     Typography
 ============= */
@@ -439,6 +443,15 @@ header > div {
 /* =============
     Footer
 ============= */
+#footer {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+}
+#footer > div {
+  grid-area: footer;
+}
+
 /* =============
     ImportantInfo
 ============= */
@@ -449,4 +462,16 @@ header > div {
 }
 #Info > div {
   grid-area: ImportantInfo;
+}
+
+/* =============
+    Main
+============= */
+#Main {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". main .";
+}
+#Main > div {
+  grid-area: Main;
 }
