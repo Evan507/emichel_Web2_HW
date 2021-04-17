@@ -439,3 +439,14 @@ header > div {
 /* =============
     Footer
 ============= */
+/* =============
+    ImportantInfo
+============= */
+#Info {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". ImportantInfo .";
+}
+#Info > div {
+  grid-area: ImportantInfo;
+}
