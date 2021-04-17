@@ -467,11 +467,11 @@ header > div {
 /* =============
     Main
 ============= */
-#Main {
+#main {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
 }
-#Main > div {
-  grid-area: Main;
+#main > div {
+  grid-area: main;
 }
