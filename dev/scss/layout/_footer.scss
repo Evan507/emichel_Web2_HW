@@ -4,8 +4,8 @@
 
 #footer{
     display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". footer .";
+    grid-template-columns: auto ;
+    grid-template-areas: "footer";
 
     >div{
         grid-area: footer;
