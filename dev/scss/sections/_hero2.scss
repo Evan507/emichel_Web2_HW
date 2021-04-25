@@ -1,0 +1,24 @@
+/* =============
+   Hero2
+============= */
+
+#Hero2{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "Hero2";
+   
+     >div{
+        grid-area: Hero2;
+
+        @include md{
+            #Himages{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-areas: "salamander toad";
+            }
+        
+    }
+
+    
+}
+}
