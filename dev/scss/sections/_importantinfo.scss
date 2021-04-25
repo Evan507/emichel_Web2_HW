@@ -9,5 +9,15 @@
 
     >div{
        grid-area: ImportantInfo;
+
+      @include md{
+        #Headlines{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-areas: "Questions Events";
+ 
+        }
+      }
     }
+
 }

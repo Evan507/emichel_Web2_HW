@@ -463,6 +463,13 @@ header > div {
 #Info > div {
   grid-area: ImportantInfo;
 }
+@media (min-width: 768px) {
+  #Info > div #Headlines {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "Questions Events";
+  }
+}
 
 /* =============
     Main
