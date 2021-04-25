@@ -1,24 +1,24 @@
 /* =============
-   Hero2
+   hero2
 ============= */
 
-#Hero2{
+#hero2{
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas: "Hero2";
-   
-     >div{
+        grid-template-areas: "hero2";
+        grid-template-columns: 0px auto 0px;
+
+    >div{
         grid-area: Hero2;
-
-        @include md{
-            #Himages{
-                display: grid;
-                grid-template-columns: 50% 50%;
-                grid-template-areas: "salamander toad";
-            }
         
+        @include md{
+        #Himages{
+            grid-template-columns: 50% 50%;
+            grid-template-areas: "salamander toad";
+        }
+       
+        }
+        #pond{
+            display: none;
+        }
     }
-
-    
-}
 }
