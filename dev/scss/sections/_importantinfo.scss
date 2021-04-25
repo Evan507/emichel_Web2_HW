@@ -5,10 +5,10 @@
 #Info{
     display: grid;
     grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". ImportantInfo .";
+    grid-template-areas: ". Info .";
 
     >div{
-       grid-area: ImportantInfo;
+        grid-area: Info;
 
       @include md{
         #Headlines{
@@ -17,7 +17,14 @@
             grid-template-areas: "Questions Events";
  
         }
-      }
+            #Money{
+            display: grid;
+            grid-template-columns: auto 30% auto;
+            grid-template-areas: "Donate . Shop ";
+                 }
+    
+        }
+        
     }
-
+   
 }
