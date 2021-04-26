@@ -3,11 +3,51 @@
 ============= */
 
 #main{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". main .";
+    @include sm{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". main .";
+    }
+    
 
     >div{
         grid-area: main;
+
+        #Row1{  
+            @include md{
+            display: grid;    
+            grid-template-columns: 40% 20% 40%;
+            grid-template-areas: "m1 . m2";
+            
+            >div{
+                grid-area: row1;
+            }
+                        }
+        }
+
+        #Row2{  
+            @include md{
+            display: grid;    
+            grid-template-columns: 40% 20% 40%;
+            grid-template-areas: "m3 . m4";
+            
+            >div{
+                grid-area: row2;
+            }
+                        }
+
+        #Row3{
+            @include md{
+                display: grid;    
+                grid-template-columns: 30% auto 30%;
+                grid-template-areas: ". m5 .";
+                
+                >div{
+                    grid-area: row3;
+        }
+    
+    }
+    }
+        }
     }
 }
