@@ -489,8 +489,12 @@ header > div {
 }
 @media (min-width: 768px) {
   #hero2 > div #Himages {
+    display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: "salamander toad";
+  }
+  #hero2 > div #Himages > div {
+    grid-area: himages;
   }
 }
 #hero2 > div #pond {
