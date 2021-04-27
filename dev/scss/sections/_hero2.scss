@@ -2,68 +2,135 @@
    hero2
 ============= */
 
-#hero2{
+#hero2 {
+
     display: grid;
-        grid-template-areas: "hero2";
-        grid-template-columns: 0px auto 0px;
 
-    >div{
-        grid-area: Hero2;
-        
-        @include md{
-        #Himages{
-            display: grid;
-            grid-template-columns: 50% 50%;
-            grid-template-areas: "salamander toad";
 
-            >div{
-                grid-area: himages;
-            }
-        }
-       
-        }
-        #pond{
-            display: none;
-        }
+    @include md {
+        grid-template-areas: ". hero2 .";
+        grid-template-columns: 16px auto 16px;
     }
 
-    >div{
-        @include lg{
-            #Himages{
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
+
+    >div {
+
+        @include md {
+            grid-area: hero2;
+        }
+
+
+        #hImages {
+
+            @include lg {
                 display: grid;
-                grid-template-columns: 10% 40% 40% 10%;
-                grid-template-areas: "salamander toad";
-    
-                >div{
-                    grid-area: himages;
-                
-        }
-    }
-
+                grid-template-columns: 50% auto;
             }
 
-        }  
+            @include xl {
 
-        >div{
-            @include xl{
-                #Himages{
-                    display: grid;
-                    grid-template-columns: auto 40%;
-                    grid-template-areas: 
-                    "salamander toad"
-                    "salamander pond"
-                    ;
-        
-                    >div{
-                        grid-area: himages;
-                    
+                grid-template-areas: "salamander toad"
+                    "salamander pond";
             }
-            #pond{
-                display: unset;
+
+            article {
+                img {
+                    width: 100%;
+                }
             }
-        }
+
+            #salamander {
+                @include xl {
+                    grid-area: salamander;
     
                 }
+            }
+
+            #toad {
+                @include xl {
+                    grid-area: toad;
     
-            }  
+                }
+            }
+
+
+
+            #pond {
+                display: none;
+
+                @include xl {
+                    grid-area: pond;
+                    display: block;
+                }
+            }
+
+        }
+
     }
+}
+
+//     @include md {
+//         #Himages {
+//             display: grid;
+//             grid-template-columns: 50% 50%;
+//             grid-template-areas: "salamander toad";
+
+//             >div {
+//                 grid-area: himages;
+//             }
+//         }
+
+//     }
+
+//     #pond {
+//         display: none;
+//     }
+// }
+
+// >div {
+//     @include lg {
+//         #Himages {
+//             display: grid;
+//             grid-template-columns: 10% 40% 40% 10%;
+//             grid-template-areas: "salamander toad";
+
+//             >div {
+//                 grid-area: himages;
+
+//             }
+//         }
+
+//     }
+
+// }
+
+// >div {
+// @include xl {
+//     #Himages {
+//         display: grid;
+//         grid-template-columns: auto 40%;
+//         grid-template-areas:
+//             "salamander toad"
+//             "salamander pond";
+
+//         >div {
+//             grid-area: himages;
+
+//         }
+
+//         #salamander{
+
+//         }
+
+//         #pond {
+//             display: unset;
+//         }
+//     }
+
+// }
+
+//     }
+// }

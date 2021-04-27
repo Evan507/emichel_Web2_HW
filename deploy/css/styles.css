@@ -505,46 +505,54 @@ header > div {
 ============= */
 #hero2 {
   display: grid;
-  grid-template-areas: "hero2";
-  grid-template-columns: 0px auto 0px;
-}
-#hero2 > div {
-  grid-area: Hero2;
 }
 @media (min-width: 768px) {
-  #hero2 > div #Himages {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "salamander toad";
-  }
-  #hero2 > div #Himages > div {
-    grid-area: himages;
-  }
-}
-#hero2 > div #pond {
-  display: none;
-}
-@media (min-width: 992px) {
-  #hero2 > div #Himages {
-    display: grid;
-    grid-template-columns: 10% 40% 40% 10%;
-    grid-template-areas: "salamander toad";
-  }
-  #hero2 > div #Himages > div {
-    grid-area: himages;
+  #hero2 {
+    grid-template-areas: ". hero2 .";
+    grid-template-columns: 16px auto 16px;
   }
 }
 @media (min-width: 1200px) {
-  #hero2 > div #Himages {
+  #hero2 {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+@media (min-width: 768px) {
+  #hero2 > div {
+    grid-area: hero2;
+  }
+}
+@media (min-width: 992px) {
+  #hero2 > div #hImages {
     display: grid;
-    grid-template-columns: auto 40%;
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 1200px) {
+  #hero2 > div #hImages {
     grid-template-areas: "salamander toad" "salamander pond";
   }
-  #hero2 > div #Himages > div {
-    grid-area: himages;
+}
+#hero2 > div #hImages article img {
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  #hero2 > div #hImages #salamander {
+    grid-area: salamander;
   }
-  #hero2 > div #Himages #pond {
-    display: unset;
+}
+@media (min-width: 1200px) {
+  #hero2 > div #hImages #toad {
+    grid-area: toad;
+  }
+}
+#hero2 > div #hImages #pond {
+  display: none;
+}
+@media (min-width: 1200px) {
+  #hero2 > div #hImages #pond {
+    grid-area: pond;
+    display: block;
   }
 }
 
