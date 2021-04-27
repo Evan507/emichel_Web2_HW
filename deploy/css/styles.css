@@ -487,6 +487,18 @@ header > div {
     grid-template-areas: "Donate . Shop ";
   }
 }
+@media (min-width: 1200px) {
+  #Info > div #Headlines {
+    display: grid;
+    grid-template-columns: 20% auto auto 20%;
+    grid-template-areas: ". Questions Events .";
+  }
+  #Info > div #Money {
+    display: grid;
+    grid-template-columns: auto 30% auto;
+    grid-template-areas: "Donate . Shop ";
+  }
+}
 
 /* =============
    hero2

@@ -44,5 +44,22 @@
         
             }
     }
+
+    >div{
+        @include xl{
+            #Headlines{
+                display: grid;
+                grid-template-columns:  20% auto auto 20%;
+                grid-template-areas: ". Questions Events .";
+     
+            }
+                #Money{
+                display: grid;
+                grid-template-columns: auto 30% auto;
+                grid-template-areas: "Donate . Shop ";
+                     }
+        
+            }
+    }
    
 }
