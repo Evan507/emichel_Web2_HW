@@ -551,43 +551,18 @@ header > div {
 /* =============
     Main
 ============= */
-@media (min-width: 576px) {
-  #main {
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". main .";
-  }
+#main {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". main .";
 }
 #main > div {
   grid-area: main;
 }
 @media (min-width: 768px) {
-  #main > div #Row1 {
+  #main > div {
     display: grid;
     grid-template-columns: 40% 20% 40%;
-    grid-template-areas: "m1 . m2";
-  }
-  #main > div #Row1 > div {
-    grid-area: row1;
-  }
-}
-@media (min-width: 768px) {
-  #main > div #Row2 {
-    display: grid;
-    grid-template-columns: 40% 20% 40%;
-    grid-template-areas: "m3 . m4";
-  }
-  #main > div #Row2 > div {
-    grid-area: row2;
-  }
-}
-@media (min-width: 768px) {
-  #main > div #Row2 #Row3 {
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-    grid-template-areas: ". m5 .";
-  }
-  #main > div #Row2 #Row3 > div {
-    grid-area: row3;
+    grid-template-areas: "m1 . m2" "m3 . m4" ". m5 .";
   }
 }
