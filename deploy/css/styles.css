@@ -572,7 +572,7 @@ header > div {
 @media (min-width: 768px) {
   #main > div #Row2 #Row3 {
     display: grid;
-    grid-template-columns: 30% auto 30%;
+    grid-template-columns: 30% 40% 30%;
     grid-template-areas: ". m5 .";
   }
   #main > div #Row2 #Row3 > div {
