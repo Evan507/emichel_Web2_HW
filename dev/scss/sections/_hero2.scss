@@ -43,4 +43,27 @@
             }
 
         }  
+
+        >div{
+            @include xl{
+                #Himages{
+                    display: grid;
+                    grid-template-columns: 40% 40%;
+                    grid-template-areas: 
+                    "salamander toad"
+                    "salamander pond"
+                    ;
+        
+                    >div{
+                        grid-area: himages;
+                    
+            }
+            #pond{
+                display: unset;
+            }
+        }
+    
+                }
+    
+            }  
     }

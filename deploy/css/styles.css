@@ -522,6 +522,19 @@ header > div {
     grid-area: himages;
   }
 }
+@media (min-width: 1200px) {
+  #hero2 > div #Himages {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-areas: "salamander toad" "salamander pond";
+  }
+  #hero2 > div #Himages > div {
+    grid-area: himages;
+  }
+  #hero2 > div #Himages #pond {
+    display: unset;
+  }
+}
 
 /* =============
     Main
