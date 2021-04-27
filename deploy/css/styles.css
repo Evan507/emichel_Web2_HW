@@ -562,8 +562,8 @@ header > div {
 @media (min-width: 768px) {
   #main > div {
     display: grid;
-    gap: 24px;
-    grid-template-columns: 40% 20% 40%;
-    grid-template-areas: "m1 . m2" "m3 . m4" ". m5 .";
+    gap: 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "m1 m2" "m3 m4" ". m5 .";
   }
 }
