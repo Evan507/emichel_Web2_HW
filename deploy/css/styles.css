@@ -525,7 +525,7 @@ header > div {
 @media (min-width: 1200px) {
   #hero2 > div #Himages {
     display: grid;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: auto 40%;
     grid-template-areas: "salamander toad" "salamander pond";
   }
   #hero2 > div #Himages > div {
