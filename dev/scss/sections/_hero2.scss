@@ -27,6 +27,20 @@
         }
     }
 
+    >div{
+        @include lg{
+            #Himages{
+                display: grid;
+                grid-template-columns: 10% 40% 40% 10%;
+                grid-template-areas: "salamander toad";
+    
+                >div{
+                    grid-area: himages;
+                
+        }
+    }
+
             }
 
-    
+        }  
+    }
