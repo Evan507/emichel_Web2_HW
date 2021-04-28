@@ -39,5 +39,18 @@
         }
     }
 
+    >div{
+        @include xl{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 
+            ". m1 m2 m3 ."
+            ". m4 m5 .";
+        }
+
+        
+    }
+
 
 }
