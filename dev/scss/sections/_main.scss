@@ -16,49 +16,56 @@
     
         }
 
-    
+     >div{
+        grid-area: main;
+     }
+        
 
     >div{
-        grid-area: main;
-
-        
             @include md{
             display: grid;  
             gap: 10px;  
-            grid-template-columns: 50% 50%;
+            grid-template-columns: repeat(4, 1fr);
             grid-template-areas: 
-            "m1 m2" 
-            "m3 m4"
+            ". m1 m2 ." 
+            ". m3 m4 ."
             ". m5 .";
+
+            @include lg{
+                display: grid;
+                gap: 10px;
+                grid-template-columns: 30% 30% 30%;
+                grid-template-areas: 
+                "m1 m2 m3"
+                "m4 m5";
+            }
+        }
+    
+
+            @include xl{
+                display: grid;
+                gap: 10px;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas: 
+                ". m1 m2 m3 ."
+                ". m4 m5 .";
+            }
+    
+            
+        
 
         
            
         }
     }
 
-    >div{
-        @include lg{
-            display: grid;
-            gap: 10px;
-            grid-template-columns: 30% 30% 30%;
-            grid-template-areas: 
-            "m1 m2 m3"
-            "m4 m5";
-        }
-    }
 
-    >div{
-        @include xl{
-            display: grid;
-            gap: 10px;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-areas: 
-            ". m1 m2 m3 ."
-            ". m4 m5 .";
-        }
-
-        
-    }
+  
 
 
-}
+
+
+
+
+
+

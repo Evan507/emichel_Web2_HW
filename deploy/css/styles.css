@@ -577,11 +577,11 @@ header > div {
   #main > div {
     display: grid;
     gap: 10px;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "m1 m2" "m3 m4" ". m5 .";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: ". m1 m2 ." ". m3 m4 ." ". m5 .";
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) and (min-width: 992px) {
   #main > div {
     display: grid;
     gap: 10px;
