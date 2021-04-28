@@ -24,12 +24,12 @@
     >div{
             @include md{
             display: grid;  
-            gap: 10px;  
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: 20% auto auto 20%;
             grid-template-areas: 
-            ". m1 m2 ." 
-            ". m3 m4 ."
-            ". m5 .";
+            "m1 m1 m2 m2" 
+            "m3 m3 m4 m4"
+            ". m5 m5 .";
+            gap: 10px;  
 
             @include lg{
                 display: grid;
