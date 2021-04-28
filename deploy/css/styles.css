@@ -561,8 +561,14 @@ header > div {
 ============= */
 #main {
   display: grid;
-  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
+}
+@media (min-width: 768px) {
+  #main {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". main .";
+  }
 }
 #main > div {
   grid-area: main;
