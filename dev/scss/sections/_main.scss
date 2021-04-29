@@ -2,69 +2,65 @@
     Main
 ============= */
 
-#main{
+#main {
 
 
-        display: grid;
-       // grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". main .";
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". main .";
 
-        @include md{
-            display: grid;
-            grid-template-columns: 16px auto 16px;
-            grid-template-areas: ". main .";
-    
-        }
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
 
-     >div{
+    >div {
         grid-area: main;
-     }
-        
-
-    >div{
-            @include md{
-            display: grid;  
-            gap: 10px;  
+        @include md {
+            display: grid;
+            gap: 10px;
             grid-template-columns: repeat(4, 1fr);
-            grid-template-areas: 
-            ". m1 m2 ." 
-            ". m3 m4 ."
-            ". m5 .";
-
-        
-           
-        }
-    }
-
-    >div{
-        @include lg{
-            display: grid;
-            gap: 10px;
-            grid-template-columns: 30% 30% 30%;
-            grid-template-areas: 
-            "m1 m2 m3"
-            "m4 m5";
-        }
-    }
-
-    >div{
-        @include xl{
-            display: grid;
-            gap: 10px;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-areas: 
-            ". m1 m2 m3 ."
-            ". m4 m5 .";
+            grid-template-areas:
+                ". m1 m2 ."
+                ". m3 m4 ."
+                ". m5 m5 .";
         }
 
-        
+        @include lg {
+            grid-template-columns:repeat(6, 1fr);;
+            grid-template-areas:
+                "m1 m1 m2 m2 m3 m3"
+                ". m4 m4 m5 m5 .";
+        }
+
+        #m1 {
+            @include md {
+                grid-area: m1;
+
+            }
+            }
+
+            #m2 {
+                @include md {
+                    grid-area: m2;
+                }
+            }
+
+            #m3 {
+                @include md {
+                    grid-area: m3;
+                }
+            }
+
+            #m4 {
+                @include md {
+                    grid-area: m4;
+                }
+            }
+
+            #m5 {
+                @include md {
+                    grid-area: m5;
+                }
+            }
+        }
     }
-
-
-}
-
-
-
-
-
-

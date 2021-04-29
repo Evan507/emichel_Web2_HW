@@ -561,13 +561,12 @@ header > div {
 ============= */
 #main {
   display: grid;
+  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". main .";
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   #main {
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". main .";
+    grid-template-columns: auto 1200px auto;
   }
 }
 #main > div {
@@ -578,22 +577,37 @@ header > div {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: ". m1 m2 ." ". m3 m4 ." ". m5 .";
+    grid-template-areas: ". m1 m2 ." ". m3 m4 ." ". m5 m5 .";
   }
 }
 @media (min-width: 992px) {
   #main > div {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-areas: "m1 m2 m3" "m4 m5";
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "m1 m1 m2 m2 m3 m3" ". m4 m4 m5 m5 .";
   }
 }
-@media (min-width: 1200px) {
-  #main > div {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: ". m1 m2 m3 ." ". m4 m5 .";
+@media (min-width: 768px) {
+  #main > div #m1 {
+    grid-area: m1;
+  }
+}
+@media (min-width: 768px) {
+  #main > div #m2 {
+    grid-area: m2;
+  }
+}
+@media (min-width: 768px) {
+  #main > div #m3 {
+    grid-area: m3;
+  }
+}
+@media (min-width: 768px) {
+  #main > div #m4 {
+    grid-area: m4;
+  }
+}
+@media (min-width: 768px) {
+  #main > div #m5 {
+    grid-area: m5;
   }
 }
