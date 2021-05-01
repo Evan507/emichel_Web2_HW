@@ -445,6 +445,21 @@ textarea {
   grid-template-columns: auto 60% auto;
   grid-template-areas: "word . icon";
 }
+@media (min-width: 992px) {
+  #header #search {
+    grid-template-columns: auto 80% auto;
+  }
+}
+@media (min-width: 768px) {
+  #header #search {
+    grid-template-columns: auto 75% auto;
+  }
+}
+@media (min-width: 1200px) {
+  #header #search {
+    grid-template-columns: auto 85% auto;
+  }
+}
 
 #logo {
   grid-area: logo;

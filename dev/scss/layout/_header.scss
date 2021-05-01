@@ -13,6 +13,18 @@
     display: grid;
     grid-template-columns: auto 60% auto;
     grid-template-areas: "word . icon";
+
+    @include lg{
+        grid-template-columns: auto 80% auto; 
+    }
+
+    @include md{
+        grid-template-columns: auto 75% auto; 
+    }
+
+    @include xl{
+        grid-template-columns: auto 85% auto; 
+    }
 }
 
 
