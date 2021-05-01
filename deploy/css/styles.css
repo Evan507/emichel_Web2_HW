@@ -447,6 +447,7 @@ header > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
+  background-color: #344F52;
 }
 #footer > div {
   grid-area: footer;
@@ -467,8 +468,9 @@ header > div {
   }
   #Info > div #Money {
     display: grid;
-    grid-template-columns: auto 30% auto;
-    grid-template-areas: "Donate . Shop ";
+    gap: 30px;
+    grid-template-columns: auto 40% 40% auto;
+    grid-template-areas: ". Donate Shop .";
     grid-area: Money;
   }
 }
@@ -481,8 +483,9 @@ header > div {
   }
   #Info > div #Money {
     display: grid;
-    grid-template-columns: auto 30% auto;
-    grid-template-areas: "Donate . Shop ";
+    gap: 30px;
+    grid-template-columns: auto 40% 40% auto;
+    grid-template-areas: ". Donate Shop .";
     grid-area: Money;
   }
 }
@@ -495,8 +498,9 @@ header > div {
   }
   #Info > div #Money {
     display: grid;
-    grid-template-columns: auto 30% auto;
-    grid-template-areas: "Donate . Shop ";
+    gap: 30px;
+    grid-template-columns: auto 40% 40% auto;
+    grid-template-areas: ". Donate Shop .";
     grid-area: Money;
   }
 }
@@ -505,6 +509,14 @@ header > div {
 }
 #Info #Events {
   background-color: #83AA8C;
+}
+#Info #Donate {
+  background-color: #344F52;
+  grid-area: Donate;
+}
+#Info #Shop {
+  background-color: #344F52;
+  grid-area: Shop;
 }
 
 /* =============
@@ -593,25 +605,40 @@ header > div {
     grid-template-areas: "m1 m1 m2 m2 m3 m3" ". m4 m4 m5 m5 .";
   }
 }
+#main > div #m1 {
+  background-color: #CAD2C5;
+}
 @media (min-width: 768px) {
   #main > div #m1 {
     grid-area: m1;
   }
+}
+#main > div #m2 {
+  background-color: #CAD2C5;
 }
 @media (min-width: 768px) {
   #main > div #m2 {
     grid-area: m2;
   }
 }
+#main > div #m3 {
+  background-color: #CAD2C5;
+}
 @media (min-width: 768px) {
   #main > div #m3 {
     grid-area: m3;
   }
 }
+#main > div #m4 {
+  background-color: #CAD2C5;
+}
 @media (min-width: 768px) {
   #main > div #m4 {
     grid-area: m4;
   }
+}
+#main > div #m5 {
+  background-color: #CAD2C5;
 }
 @media (min-width: 768px) {
   #main > div #m5 {

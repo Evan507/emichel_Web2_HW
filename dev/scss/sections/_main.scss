@@ -33,6 +33,7 @@
         }
 
         #m1 {
+            background-color: $seabeige;
             @include md {
                 grid-area: m1;
 
@@ -40,24 +41,28 @@
             }
 
             #m2 {
+                background-color: $seabeige;
                 @include md {
                     grid-area: m2;
                 }
             }
 
             #m3 {
+                background-color: $seabeige;
                 @include md {
                     grid-area: m3;
                 }
             }
 
             #m4 {
+                background-color: $seabeige;
                 @include md {
                     grid-area: m4;
                 }
             }
 
             #m5 {
+                background-color: $seabeige;
                 @include md {
                     grid-area: m5;
                 }

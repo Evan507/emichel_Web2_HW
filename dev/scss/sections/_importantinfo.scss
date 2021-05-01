@@ -21,10 +21,13 @@
         }
             #Money{
             display: grid;
-            grid-template-columns: auto 30% auto;
-            grid-template-areas: "Donate . Shop ";
+            gap: 30px;
+            grid-template-columns: auto 40% 40% auto;
+            grid-template-areas: ". Donate Shop .";
 
             grid-area: Money;
+
+
                  }
 
         
@@ -47,8 +50,9 @@
             }
                 #Money{
                 display: grid;
-                grid-template-columns: auto 30% auto;
-                grid-template-areas: "Donate . Shop ";
+                gap:30px;
+                grid-template-columns: auto 40% 40% auto;
+                grid-template-areas: ". Donate Shop .";
 
                 grid-area: Money;
                      }
@@ -68,8 +72,10 @@
             }
                 #Money{
                 display: grid;
-                grid-template-columns: auto 30% auto;
-                grid-template-areas: "Donate . Shop ";
+                gap:30px;
+                grid-template-columns: auto 40% 40% auto;
+                grid-template-areas: ". Donate Shop .";
+
 
                 grid-area: Money;
                      }
@@ -83,6 +89,16 @@ background-color: $greenteal;
 
     #Events{
 background-color: $seafoam;
+    }
+
+    #Donate{
+        background-color: $darkteal;
+        grid-area: Donate;
+    }
+
+    #Shop{
+        background-color: $darkteal;
+        grid-area: Shop;
     }
    
 }
