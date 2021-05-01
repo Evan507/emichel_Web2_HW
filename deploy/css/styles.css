@@ -457,22 +457,19 @@ header > div {
 ============= */
 #Info {
   display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". Info .";
-}
-#Info > div {
-  grid-area: Info;
 }
 @media (min-width: 768px) {
   #Info > div #Headlines {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: auto 60%;
     grid-template-areas: "Questions Events";
+    grid-area: Headlines;
   }
   #Info > div #Money {
     display: grid;
     grid-template-columns: auto 30% auto;
     grid-template-areas: "Donate . Shop ";
+    grid-area: Money;
   }
 }
 @media (min-width: 992px) {
@@ -480,24 +477,34 @@ header > div {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: "Questions Events";
+    grid-area: Headlines;
   }
   #Info > div #Money {
     display: grid;
     grid-template-columns: auto 30% auto;
     grid-template-areas: "Donate . Shop ";
+    grid-area: Money;
   }
 }
 @media (min-width: 1200px) {
   #Info > div #Headlines {
     display: grid;
-    grid-template-columns: 20% auto auto 20%;
-    grid-template-areas: ". Questions Events .";
+    grid-template-columns: 50% auto;
+    grid-template-areas: "Questions Events";
+    grid-area: Headlines;
   }
   #Info > div #Money {
     display: grid;
     grid-template-columns: auto 30% auto;
     grid-template-areas: "Donate . Shop ";
+    grid-area: Money;
   }
+}
+#Info #Questions {
+  background-color: #52796F;
+}
+#Info #Events {
+  background-color: #83AA8C;
 }
 
 /* =============
