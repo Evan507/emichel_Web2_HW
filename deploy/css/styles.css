@@ -431,13 +431,36 @@ textarea {
 /* =============
     Header
 ============= */
-header {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header .";
-}
-header > div {
+#header {
   grid-area: header;
+}
+#header #logo {
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-areas: "logo .";
+  background-color: #344F52;
+}
+#header #search {
+  display: grid;
+  grid-template-columns: auto 60% auto;
+  grid-template-areas: "word . icon";
+}
+
+#logo {
+  grid-area: logo;
+}
+
+#search {
+  grid-area: search;
+}
+
+#word {
+  grid-area: word;
+}
+
+#icon {
+  grid-area: icon;
+  background-color: #52796F;
 }
 
 /* =============
