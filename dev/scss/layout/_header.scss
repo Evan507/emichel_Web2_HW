@@ -25,13 +25,18 @@
     @include xl{
         grid-template-columns: auto 85% auto; 
     }
-section{
-    grid-area: search;
-}
+
+    >div{
+        grid-area:search;
+    }
+
 }
     grid-area: header;
 
+
+
 }
+
 
 #logo{
     grid-area:logo;
@@ -46,7 +51,8 @@ section{
     grid-area: word;
 }
 
+
 button{
     grid-area: icon;
-    background-color: $greenteal;
+    background-color: $seafoam;
 }

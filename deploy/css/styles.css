@@ -460,7 +460,7 @@ textarea {
     grid-template-columns: auto 85% auto;
   }
 }
-#header #search section {
+#header #search > div {
   grid-area: search;
 }
 
@@ -478,7 +478,7 @@ textarea {
 
 button {
   grid-area: icon;
-  background-color: #52796F;
+  background-color: #83AA8C;
 }
 
 /* =============
