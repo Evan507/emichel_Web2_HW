@@ -443,7 +443,7 @@ textarea {
 #header #search {
   display: grid;
   grid-template-columns: auto 60% auto;
-  grid-template-areas: "word . icon";
+  grid-template-areas: ". search .";
 }
 @media (min-width: 992px) {
   #header #search {
@@ -460,6 +460,9 @@ textarea {
     grid-template-columns: auto 85% auto;
   }
 }
+#header #search section {
+  grid-area: search;
+}
 
 #logo {
   grid-area: logo;
@@ -473,7 +476,7 @@ textarea {
   grid-area: word;
 }
 
-#icon {
+button {
   grid-area: icon;
   background-color: #52796F;
 }
