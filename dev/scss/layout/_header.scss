@@ -2,11 +2,16 @@
     Header
 ============= */
 #header{
+    display: grid;
 
-#logo{display: grid;
+
+#logo{
+    display: grid;
     grid-template-columns: 100px auto;
     grid-template-areas: "logo .";
     background-color: $darkteal;
+
+    grid-area: logo;
 }
 
 #search{
@@ -55,3 +60,10 @@
 button{
     background-color: $seafoam;
 }
+
+
+>div{
+    grid-area: header;
+}
+
+

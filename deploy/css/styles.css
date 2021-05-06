@@ -432,6 +432,7 @@ textarea {
     Header
 ============= */
 #header {
+  display: grid;
   grid-area: header;
 }
 #header #logo {
@@ -439,6 +440,7 @@ textarea {
   grid-template-columns: 100px auto;
   grid-template-areas: "logo .";
   background-color: #344F52;
+  grid-area: logo;
 }
 #header #search {
   display: grid;
@@ -478,6 +480,10 @@ textarea {
 
 button {
   background-color: #83AA8C;
+}
+
+> div {
+  grid-area: header;
 }
 
 /* =============
