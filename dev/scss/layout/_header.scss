@@ -6,17 +6,17 @@
 
 
 #logo{
-    display: grid;
-    grid-template-columns: 100px auto;
-    grid-template-areas: "logo .";
-    background-color: $darkteal;
+ display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-areas: "logo .";
+  background-color: $darkteal;
 
 }
 
 #search{
     display: grid;
     grid-template-columns: auto 60% auto;
-    grid-template-areas: "word . icon";
+    grid-template-areas: ". search .";
 
     @include lg{
         grid-template-columns: auto 80% auto; 
@@ -60,8 +60,5 @@ button{
 }
 
 
->div{
-    grid-area: header;
-}
 
 

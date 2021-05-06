@@ -440,7 +440,7 @@ textarea {
 #header #search {
   display: grid;
   grid-template-columns: auto 60% auto;
-  grid-template-areas: "word . icon";
+  grid-template-areas: ". search .";
 }
 @media (min-width: 992px) {
   #header #search {
@@ -475,10 +475,6 @@ textarea {
 
 button {
   background-color: #83AA8C;
-}
-
-> div {
-  grid-area: header;
 }
 
 /* =============
