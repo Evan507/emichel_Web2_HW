@@ -685,3 +685,28 @@ button {
     grid-area: m5;
   }
 }
+
+/* =============
+   hero
+============= */
+#hero {
+  background-image: url("../img/hero/hero.jpg");
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  #hero {
+    height: 775px;
+  }
+}
+@media (min-width: 992px) {
+  #hero {
+    height: 1030px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero {
+    height: 1450px;
+  }
+}
