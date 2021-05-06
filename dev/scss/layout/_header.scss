@@ -7,10 +7,10 @@
 
 
 #logo{
- display: grid;
-  grid-template-columns: 100px auto;
-  grid-template-areas: "logo .";
-  background-color: $darkteal;
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-areas: "logo .";
+    background-color: $darkteal;
 
 }
 
@@ -36,8 +36,6 @@
     }
 
 }
-
-
 
 
 }
