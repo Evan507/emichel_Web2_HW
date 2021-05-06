@@ -446,7 +446,6 @@ textarea {
   display: grid;
   grid-template-columns: auto 60% auto;
   grid-template-areas: ". search .";
-  grid-area: search;
 }
 @media (min-width: 992px) {
   #search {
@@ -463,13 +462,12 @@ textarea {
     grid-template-columns: auto 85% auto;
   }
 }
+#search > div {
+  grid-area: search;
+}
 
 #logo {
   grid-area: logo;
-}
-
-#search {
-  grid-area: search;
 }
 
 #word {

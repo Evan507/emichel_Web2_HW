@@ -19,7 +19,7 @@
     display: grid;
     grid-template-columns: auto 60% auto;
     grid-template-areas: ". search .";
-    grid-area: search;
+    
 
     @include lg{
         grid-template-columns: auto 80% auto; 
@@ -33,6 +33,10 @@
         grid-template-columns: auto 85% auto; 
     }
 
+    >div{
+        grid-area: search;
+    }
+
 }
 
 
@@ -41,7 +45,7 @@
 }
 
 #search{
-    grid-area:search;
+    // grid-area:search;
 }
 
 #word{
