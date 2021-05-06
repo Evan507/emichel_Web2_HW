@@ -3,14 +3,23 @@
 ============= */
 #header{
     grid-area: header;
-   
 
 
+}
+
+#logo{
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-areas: "logo .";
+    background-color: $darkteal;
+
+}
 
 #search{
     display: grid;
     grid-template-columns: auto 60% auto;
     grid-template-areas: ". search .";
+    grid-area: search;
 
     @include lg{
         grid-template-columns: auto 80% auto; 
@@ -23,21 +32,6 @@
     @include xl{
         grid-template-columns: auto 85% auto; 
     }
-
-    >div{
-        grid-area:search;
-    }
-
-}
-
-
-}
-
-#logo{
-    display: grid;
-    grid-template-columns: 100px auto;
-    grid-template-areas: "logo .";
-    background-color: $darkteal;
 
 }
 
