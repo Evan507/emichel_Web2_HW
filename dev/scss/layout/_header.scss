@@ -2,7 +2,7 @@
     Header
 ============= */
 #header{
-
+   
 
 
 #logo{
@@ -11,13 +11,12 @@
     grid-template-areas: "logo .";
     background-color: $darkteal;
 
-    grid-area: logo;
 }
 
 #search{
     display: grid;
     grid-template-columns: auto 60% auto;
-    grid-template-areas: ". search .";
+    grid-template-areas: "word . icon";
 
     @include lg{
         grid-template-columns: auto 80% auto; 
@@ -45,7 +44,6 @@
 
 #logo{
     grid-area:logo;
-
 }
 
 #search{

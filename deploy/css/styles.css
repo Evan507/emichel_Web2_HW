@@ -436,12 +436,11 @@ textarea {
   grid-template-columns: 100px auto;
   grid-template-areas: "logo .";
   background-color: #344F52;
-  grid-area: logo;
 }
 #header #search {
   display: grid;
   grid-template-columns: auto 60% auto;
-  grid-template-areas: ". search .";
+  grid-template-areas: "word . icon";
 }
 @media (min-width: 992px) {
   #header #search {
