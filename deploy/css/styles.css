@@ -434,12 +434,6 @@ textarea {
 #header {
   grid-area: header;
 }
-#header #logo {
-  display: grid;
-  grid-template-columns: 100px auto;
-  grid-template-areas: "logo .";
-  background-color: #344F52;
-}
 #header #search {
   display: grid;
   grid-template-columns: auto 60% auto;
@@ -462,6 +456,13 @@ textarea {
 }
 #header #search > div {
   grid-area: search;
+}
+
+#logo {
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-areas: "logo .";
+  background-color: #344F52;
 }
 
 #logo {

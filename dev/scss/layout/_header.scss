@@ -6,13 +6,6 @@
    
 
 
-#logo{
-    display: grid;
-    grid-template-columns: 100px auto;
-    grid-template-areas: "logo .";
-    background-color: $darkteal;
-
-}
 
 #search{
     display: grid;
@@ -37,6 +30,14 @@
 
 }
 
+
+}
+
+#logo{
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-areas: "logo .";
+    background-color: $darkteal;
 
 }
 
