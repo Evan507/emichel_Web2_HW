@@ -431,6 +431,9 @@ textarea {
 /* =============
     Header
 ============= */
+#header {
+  grid-area: header;
+}
 #header #logo {
   display: grid;
   grid-template-columns: 100px auto;
