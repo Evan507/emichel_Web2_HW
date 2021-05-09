@@ -566,7 +566,7 @@ button {
 @media (min-width: 768px) {
   #hero2 {
     grid-template-areas: ". hero2 .";
-    grid-template-columns: 16px auto 16px;
+    grid-template-columns: 50px auto 50px;
   }
 }
 @media (min-width: 1200px) {
@@ -588,29 +588,55 @@ button {
 @media (min-width: 1200px) {
   #hero2 > div #hImages {
     grid-template-areas: "salamander toad" "salamander pond";
+    grid-template-rows: 415px 415px;
   }
 }
-#hero2 > div #hImages article img {
-  width: 100%;
+#hero2 > div #hImages #salamander {
+  background-image: url("../img/hero2/hero2.jpg");
+  height: 360px;
+}
+@media (min-width: 768px) {
+  #hero2 > div #hImages #salamander {
+    background-position: top center;
+    height: 595px;
+  }
 }
 @media (min-width: 1200px) {
   #hero2 > div #hImages #salamander {
     grid-area: salamander;
+    height: 830px;
+  }
+}
+#hero2 > div #hImages #toad {
+  background-image: url("../img/hero2/hero3.jpg");
+  height: 360px;
+}
+@media (min-width: 768px) {
+  #hero2 > div #hImages #toad {
+    height: 595px;
   }
 }
 @media (min-width: 1200px) {
   #hero2 > div #hImages #toad {
     grid-area: toad;
+    height: 415px;
   }
 }
 #hero2 > div #hImages #pond {
   display: none;
+  background-image: url("../img/hero2/hero4.jpg");
 }
 @media (min-width: 1200px) {
   #hero2 > div #hImages #pond {
     grid-area: pond;
     display: block;
+    height: 415px;
   }
+}
+
+article {
+  background-position: center;
+  background-size: cover;
 }
 
 /* =============
