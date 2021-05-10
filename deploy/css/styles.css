@@ -385,22 +385,16 @@ body ul li {
 body article {
   padding: 10px;
 }
-body p {
+body #main {
   padding: 10px;
 }
-body h1 {
-  padding: 10px;
-}
-body h2 {
-  padding: 10px;
-}
-body h3 {
+body #hero2 {
   padding: 10px;
 }
 body li {
   padding: 10px;
 }
-body section {
+body #footer {
   padding: 10px;
 }
 
@@ -551,22 +545,16 @@ body ul li {
 body article {
   padding: 10px;
 }
-body p {
+body #main {
   padding: 10px;
 }
-body h1 {
-  padding: 10px;
-}
-body h2 {
-  padding: 10px;
-}
-body h3 {
+body #hero2 {
   padding: 10px;
 }
 body li {
   padding: 10px;
 }
-body section {
+body #footer {
   padding: 10px;
 }
 
