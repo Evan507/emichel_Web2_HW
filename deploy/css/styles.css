@@ -400,6 +400,9 @@ body h3 {
 body li {
   padding: 10px;
 }
+body section {
+  padding: 10px;
+}
 
 /* =============
     Typography
@@ -508,6 +511,9 @@ button {
 #footer > div {
   grid-area: footer;
 }
+#footer h2 {
+  font-family: "Chivo", sans-serif;
+}
 
 /* =============
     Base
@@ -558,6 +564,9 @@ body h3 {
   padding: 10px;
 }
 body li {
+  padding: 10px;
+}
+body section {
   padding: 10px;
 }
 
@@ -625,6 +634,12 @@ body li {
 #Info #Shop {
   background-color: #344F52;
   grid-area: Shop;
+}
+#Info h1 {
+  font-family: "Chivo", sans-serif;
+}
+#Info h2 {
+  font-family: "Chivo", sans-serif;
 }
 
 /* =============
@@ -778,6 +793,9 @@ article {
   #main > div #m5 {
     grid-area: m5;
   }
+}
+#main h2 {
+  font-family: "Chivo", sans-serif;
 }
 
 /* =============
