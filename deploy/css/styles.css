@@ -352,35 +352,53 @@ template {
 /* =============
     Base
 ============= */
-figure {
+body {
+  font-family: "Overpass", sans-serif;
+}
+body figure {
   padding: 0;
   margin: 0;
 }
-
-ul {
-  padding: 0;
-  margin: 0;
-}
-ul li {
-  list-style: none;
-}
-
-.container-grid {
+body .container-grid {
   display: grid;
   grid-template-columns: auto 1200px auto;
   grid-template-areas: ". grid-content .";
   min-height: 100vh;
 }
-.container-grid .grid-content {
+body .container-grid .grid-content {
   grid-area: grid-content;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-img {
+body img {
   width: 100%;
+}
+body ul {
+  padding: 0;
+  margin: 0;
+}
+body ul li {
+  list-style: none;
+}
+body article {
+  padding: 10px;
+}
+body p {
+  padding: 10px;
+}
+body h1 {
+  padding: 10px;
+}
+body h2 {
+  padding: 10px;
+}
+body h3 {
+  padding: 10px;
+}
+body li {
+  padding: 10px;
 }
 
 /* =============
@@ -489,6 +507,58 @@ button {
 }
 #footer > div {
   grid-area: footer;
+}
+
+/* =============
+    Base
+============= */
+body {
+  font-family: "Overpass", sans-serif;
+}
+body figure {
+  padding: 0;
+  margin: 0;
+}
+body .container-grid {
+  display: grid;
+  grid-template-columns: auto 1200px auto;
+  grid-template-areas: ". grid-content .";
+  min-height: 100vh;
+}
+body .container-grid .grid-content {
+  grid-area: grid-content;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body img {
+  width: 100%;
+}
+body ul {
+  padding: 0;
+  margin: 0;
+}
+body ul li {
+  list-style: none;
+}
+body article {
+  padding: 10px;
+}
+body p {
+  padding: 10px;
+}
+body h1 {
+  padding: 10px;
+}
+body h2 {
+  padding: 10px;
+}
+body h3 {
+  padding: 10px;
+}
+body li {
+  padding: 10px;
 }
 
 /* =============
