@@ -497,6 +497,7 @@ button {
     Footer
 ============= */
 #footer {
+  color: #fff;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
@@ -507,6 +508,9 @@ button {
 }
 #footer h2 {
   font-family: "Chivo", sans-serif;
+}
+#footer #social ul {
+  color: #fff;
 }
 
 /* =============
@@ -611,9 +615,11 @@ body #footer {
 }
 #Info #Questions {
   background-color: #52796F;
+  color: #fff;
 }
 #Info #Events {
   background-color: #83AA8C;
+  color: #fff;
 }
 #Info #Donate {
   background-color: #344F52;
@@ -625,6 +631,7 @@ body #footer {
 }
 #Info h1 {
   font-family: "Chivo", sans-serif;
+  color: #fff;
 }
 #Info h2 {
   font-family: "Chivo", sans-serif;

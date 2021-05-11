@@ -3,6 +3,8 @@
 ============= */
 
 #footer{
+
+    color: $white; 
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
@@ -17,4 +19,11 @@
         font-family: 'Chivo', sans-serif;
     }
 
+    #social{
+        ul{
+            color: $white; 
+        }
+
+    }
+    
 }
