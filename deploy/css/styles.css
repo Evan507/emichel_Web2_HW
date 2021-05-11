@@ -636,6 +636,9 @@ body #footer {
 #Info h2 {
   font-family: "Chivo", sans-serif;
 }
+#Info #arrow {
+  color: #fff;
+}
 
 /* =============
    hero2
