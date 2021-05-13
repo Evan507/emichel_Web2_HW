@@ -68,7 +68,8 @@
                 grid-template-areas: "Questions Events";
 
                 grid-area: Headlines;
-     
+                
+                margin: 20px;
             }
                 #Money{
                 display: grid;
@@ -86,34 +87,54 @@
     #Questions{
 background-color: $greenteal;
 color: $white; 
+padding: 20px;
+display: flex;
+flex-wrap: wrap;
+align-content: space-between;
     }
 
     #Events{
 background-color: $seafoam;
 color: $white; 
+padding: 20px;
+display: flex;
+flex-wrap: wrap;
+align-content: space-between;
     }
 
     #Donate{
         background-color: $darkteal;
         grid-area: Donate;
+        padding: 20px;
     }
 
     #Shop{
         background-color: $darkteal;
         grid-area: Shop;
+        padding: 20px;
     }
 
     h1{
         font-family: 'Chivo', sans-serif;
         color: $white; 
+        padding-bottom: 10px;
     }
 
     h2{
         font-family: 'Chivo', sans-serif;
     }
 
+    article{
+        margin-bottom: 20px;
+    }
+
+
+
     #arrow{
         color: $white;
+        background-color: transparent;
+        border: none;
+        
     }
    
 }

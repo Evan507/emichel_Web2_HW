@@ -20,8 +20,12 @@
     }
 
     #social{
+        display: flex;
+        
         ul{
+           li{
             color: $white; 
+           } 
         }
 
     }
