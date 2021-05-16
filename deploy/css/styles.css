@@ -602,9 +602,6 @@ body #footer {
 /* =============
     ImportantInfo
 ============= */
-#Info {
-  display: grid;
-}
 #Info > div #Headlines {
   margin-bottom: 20px;
 }
@@ -619,7 +616,7 @@ body #footer {
   #Info > div #Money {
     display: grid;
     gap: 15px;
-    grid-template-columns: 15px auto auto 15px;
+    grid-template-columns: 10px auto auto 10px;
     grid-template-areas: ". Donate Shop .";
     grid-area: Money;
     padding-bottom: 40px;
@@ -666,6 +663,10 @@ body #footer {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
+  padding-right: 5px;
+}
+#Info #Questions button {
+  margin-left: auto;
 }
 #Info #Events {
   background-color: #83AA8C;
@@ -674,6 +675,10 @@ body #footer {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
+  padding-right: 5px;
+}
+#Info #Events button {
+  margin-left: auto;
 }
 #Info #Donate {
   background-color: #344F52;

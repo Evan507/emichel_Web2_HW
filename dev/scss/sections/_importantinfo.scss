@@ -3,7 +3,7 @@
 ============= */
 
 #Info{
-    display: grid;
+    // display: grid;
   //  grid-template-columns: 16px auto 16px;
    // grid-template-areas: ". Info .";
 
@@ -28,7 +28,7 @@
             #Money{
             display: grid;
             gap: 15px;
-            grid-template-columns: 15px auto auto 15px;
+            grid-template-columns: 10px auto auto 10px;
             grid-template-areas: ". Donate Shop .";
 
             grid-area: Money;
@@ -105,6 +105,12 @@ padding: 20px;
 display: flex;
 flex-wrap: wrap;
 align-content: space-between;
+
+padding-right:5px;
+
+        button{
+            margin-left: auto;
+        }
     }
 
     #Events{
@@ -114,6 +120,12 @@ padding: 20px;
 display: flex;
 flex-wrap: wrap;
 align-content: space-between;
+
+padding-right:5px;
+
+button{
+    margin-left: auto;
+}
     }
 
     #Donate{
