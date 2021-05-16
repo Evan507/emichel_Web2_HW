@@ -605,12 +605,16 @@ body #footer {
 #Info {
   display: grid;
 }
+#Info > div #Headlines {
+  margin-bottom: 20px;
+}
 @media (min-width: 768px) {
   #Info > div #Headlines {
     display: grid;
     grid-template-columns: auto 60%;
     grid-template-areas: "Questions Events";
     grid-area: Headlines;
+    margin-bottom: 20px;
   }
   #Info > div #Money {
     display: grid;
@@ -618,6 +622,7 @@ body #footer {
     grid-template-columns: auto 40% 40% auto;
     grid-template-areas: ". Donate Shop .";
     grid-area: Money;
+    padding-bottom: 40px;
   }
 }
 @media (min-width: 992px) {
@@ -626,6 +631,7 @@ body #footer {
     grid-template-columns: 50% 50%;
     grid-template-areas: "Questions Events";
     grid-area: Headlines;
+    margin-bottom: 20px;
   }
   #Info > div #Money {
     display: grid;
@@ -633,6 +639,7 @@ body #footer {
     grid-template-columns: auto 40% 40% auto;
     grid-template-areas: ". Donate Shop .";
     grid-area: Money;
+    padding-bottom: 55px;
   }
 }
 @media (min-width: 1200px) {
@@ -641,7 +648,7 @@ body #footer {
     grid-template-columns: 50% auto;
     grid-template-areas: "Questions Events";
     grid-area: Headlines;
-    margin: 20px;
+    margin-bottom: 20px;
   }
   #Info > div #Money {
     display: grid;
@@ -649,6 +656,7 @@ body #footer {
     grid-template-columns: auto 40% 40% auto;
     grid-template-areas: ". Donate Shop .";
     grid-area: Money;
+    padding-bottom: 65px;
   }
 }
 #Info #Questions {
@@ -671,11 +679,13 @@ body #footer {
   background-color: #344F52;
   grid-area: Donate;
   padding: 20px;
+  margin-bottom: 16px;
 }
 #Info #Shop {
   background-color: #344F52;
   grid-area: Shop;
   padding: 20px;
+  margin-bottom: 16px;
 }
 #Info h1 {
   font-family: "Chivo", sans-serif;
@@ -684,9 +694,6 @@ body #footer {
 }
 #Info h2 {
   font-family: "Chivo", sans-serif;
-}
-#Info article {
-  margin-bottom: 20px;
 }
 #Info #arrow {
   color: #fff;

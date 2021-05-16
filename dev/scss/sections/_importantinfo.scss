@@ -10,6 +10,10 @@
     >div{
         //grid-area: Info;
 
+        #Headlines{
+            margin-bottom: 20px;
+        }
+
       @include md{
         #Headlines{
             display: grid;
@@ -17,6 +21,8 @@
             grid-template-areas: "Questions Events";
 
             grid-area: Headlines;
+
+            margin-bottom: 20px;
  
         }
             #Money{
@@ -27,7 +33,7 @@
 
             grid-area: Money;
 
-
+            padding-bottom: 40px;
                  }
 
         
@@ -46,6 +52,8 @@
                 grid-template-areas: "Questions Events";
 
                 grid-area: Headlines;
+
+                margin-bottom: 20px;
      
             }
                 #Money{
@@ -55,6 +63,8 @@
                 grid-template-areas: ". Donate Shop .";
 
                 grid-area: Money;
+
+                padding-bottom: 55px;
                      }
         
             }
@@ -68,8 +78,10 @@
                 grid-template-areas: "Questions Events";
 
                 grid-area: Headlines;
+
+                margin-bottom: 20px;
                 
-                margin: 20px;
+                // margin: 20px;
             }
                 #Money{
                 display: grid;
@@ -79,6 +91,8 @@
 
 
                 grid-area: Money;
+
+                padding-bottom: 65px;
                      }
         
             }
@@ -106,12 +120,14 @@ align-content: space-between;
         background-color: $darkteal;
         grid-area: Donate;
         padding: 20px;
+        margin-bottom: 16px;
     }
 
     #Shop{
         background-color: $darkteal;
         grid-area: Shop;
         padding: 20px;
+        margin-bottom: 16px;
     }
 
     h1{
@@ -124,9 +140,7 @@ align-content: space-between;
         font-family: 'Chivo', sans-serif;
     }
 
-    article{
-        margin-bottom: 20px;
-    }
+    
 
 
 
