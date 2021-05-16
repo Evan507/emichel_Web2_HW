@@ -446,10 +446,6 @@ textarea {
 /* =============
     Header
 ============= */
-#header {
-  grid-area: header;
-}
-
 #logo {
   display: grid;
   grid-template-columns: 100px auto;
@@ -457,40 +453,59 @@ textarea {
   background-color: #344F52;
 }
 
-#search {
-  display: grid;
-  grid-template-columns: auto 60% auto;
-  grid-template-areas: ". search .";
+#search > div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 @media (min-width: 992px) {
-  #search {
-    grid-template-columns: auto 80% auto;
+  #search > div {
+    margin-bottom: 25px;
   }
 }
 @media (min-width: 768px) {
-  #search {
-    grid-template-columns: auto 75% auto;
+  #search > div {
+    margin-bottom: 25px;
   }
 }
 @media (min-width: 1200px) {
-  #search {
-    grid-template-columns: auto 85% auto;
+  #search > div {
+    margin-bottom: 25px;
   }
-}
-#search > div {
-  grid-area: search;
 }
 
 #logo {
   grid-area: logo;
+  padding: 10px;
+  padding-left: 15px;
+  margin-bottom: 15px;
 }
-
-#word {
-  grid-area: word;
+@media (min-width: 992px) {
+  #logo {
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  #logo {
+    margin-bottom: 25px;
+  }
 }
 
 button {
+  color: #fff;
   background-color: #83AA8C;
+  border: none;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+input {
+  border: none;
+  border-bottom: solid 1px #344F52;
+  width: 80%;
 }
 
 /* =============

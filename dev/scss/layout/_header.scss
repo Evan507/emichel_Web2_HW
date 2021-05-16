@@ -1,11 +1,11 @@
 /* =============
     Header
 ============= */
-#header{
-    grid-area: header;
+// #header{
+//     grid-area: header;
 
 
-}
+// }
 
 #logo{
     display: grid;
@@ -16,45 +16,73 @@
 }
 
 #search{
-    display: grid;
-    grid-template-columns: auto 60% auto;
-    grid-template-areas: ". search .";
-    
-
-    @include lg{
-        grid-template-columns: auto 80% auto; 
-    }
-
-    @include md{
-        grid-template-columns: auto 75% auto; 
-    }
-
-    @include xl{
-        grid-template-columns: auto 85% auto; 
-    }
 
     >div{
-        grid-area: search;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    
+        // grid-template-columns: auto 60% auto;
+        // grid-template-areas: ". search .";
+        
+    
+        @include lg{
+            // grid-template-columns: auto 80% auto; 
+            margin-bottom: 25px;
+        }
+    
+        @include md{
+            // grid-template-columns: auto 75% auto; 
+            margin-bottom: 25px;
+        }
+    
+        @include xl{
+            // grid-template-columns: auto 85% auto; 
+            margin-bottom: 25px;
+        }
+    
+        // >div{
+        //     grid-area: search;
+        // }
     }
+  
 
 }
 
 
 #logo{
     grid-area:logo;
+    padding: 10px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+
+    @include lg{
+        margin-bottom: 25px;
+    }
+
+
+    @include xl{
+        margin-bottom: 25px;
+    }
 }
 
-#search{
-    // grid-area:search;
-}
-
-#word{
-    grid-area: word;
-}
 
 
 button{
+    color: $white;
     background-color: $seafoam;
+    border: none;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+input{
+    border: none;
+    border-bottom: solid 1px $darkteal;
+    width: 80%;
 }
 
 
