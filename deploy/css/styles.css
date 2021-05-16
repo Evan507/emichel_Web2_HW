@@ -736,11 +736,6 @@ body #footer {
     margin-bottom: 75px;
   }
 }
-@media (min-width: 768px) {
-  #hero2 {
-    grid-template-columns: 15px auto 15px;
-  }
-}
 @media (min-width: 1200px) {
   #hero2 {
     grid-template-columns: auto 1200px auto;
@@ -750,6 +745,8 @@ body #footer {
 @media (min-width: 992px) {
   #hero2 {
     margin-bottom: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 @media (min-width: 768px) {
