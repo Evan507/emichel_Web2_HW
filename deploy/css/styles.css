@@ -727,11 +727,13 @@ body #footer {
 ============= */
 #hero2 {
   display: grid;
+  margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   #hero2 {
     grid-template-areas: ". hero2 .";
     grid-template-columns: 0px auto 0px;
+    margin-bottom: 75px;
   }
 }
 @media (min-width: 768px) {
@@ -742,6 +744,12 @@ body #footer {
 @media (min-width: 1200px) {
   #hero2 {
     grid-template-columns: auto 1200px auto;
+    margin-bottom: 110px;
+  }
+}
+@media (min-width: 992px) {
+  #hero2 {
+    margin-bottom: 100px;
   }
 }
 @media (min-width: 768px) {
@@ -814,13 +822,7 @@ article {
 ============= */
 #main {
   display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". main .";
-}
-@media (min-width: 1200px) {
-  #main {
-    grid-template-columns: auto 1200px auto;
-  }
+  gap: 10px;
 }
 #main > div {
   grid-area: main;
@@ -829,7 +831,7 @@ article {
   #main > div {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 15px auto auto 15px;
     grid-template-areas: ". m1 m2 ." ". m3 m4 ." ". m5 m5 .";
   }
 }
@@ -847,6 +849,17 @@ article {
     grid-area: m1;
   }
 }
+#main > div #m1 p {
+  padding: 18px;
+}
+#main > div #m1 h2 {
+  padding-top: 15px;
+  padding: 18px;
+}
+#main > div #m1 button {
+  margin-bottom: 25px;
+  margin-left: 18px;
+}
 #main > div #m2 {
   background-color: #CAD2C5;
 }
@@ -854,6 +867,17 @@ article {
   #main > div #m2 {
     grid-area: m2;
   }
+}
+#main > div #m2 p {
+  padding: 18px;
+}
+#main > div #m2 h2 {
+  padding-top: 15px;
+  padding: 18px;
+}
+#main > div #m2 button {
+  margin-bottom: 25px;
+  margin-left: 18px;
 }
 #main > div #m3 {
   background-color: #CAD2C5;
@@ -863,6 +887,17 @@ article {
     grid-area: m3;
   }
 }
+#main > div #m3 p {
+  padding: 18px;
+}
+#main > div #m3 h2 {
+  padding-top: 15px;
+  padding: 18px;
+}
+#main > div #m3 button {
+  margin-bottom: 25px;
+  margin-left: 18px;
+}
 #main > div #m4 {
   background-color: #CAD2C5;
 }
@@ -871,13 +906,44 @@ article {
     grid-area: m4;
   }
 }
+#main > div #m4 p {
+  padding: 18px;
+}
+#main > div #m4 h2 {
+  padding-top: 15px;
+  padding: 18px;
+}
+#main > div #m4 button {
+  margin-bottom: 25px;
+  margin-left: 18px;
+}
 #main > div #m5 {
   background-color: #CAD2C5;
 }
 @media (min-width: 768px) {
   #main > div #m5 {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
     grid-area: m5;
+    width: 50%;
   }
+}
+@media (min-width: 992px) {
+  #main > div #m5 {
+    width: 100%;
+  }
+}
+#main > div #m5 p {
+  padding: 18px;
+}
+#main > div #m5 h2 {
+  padding-top: 15px;
+  padding: 18px;
+}
+#main > div #m5 button {
+  margin-bottom: 25px;
+  margin-left: 18px;
 }
 #main h2 {
   font-family: "Chivo", sans-serif;

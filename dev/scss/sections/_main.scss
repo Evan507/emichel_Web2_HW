@@ -6,11 +6,12 @@
 
 
     display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". main .";
+    gap: 10px;
+    // grid-template-columns: 16px auto 16px;
+    // grid-template-areas: ". main .";
 
     @include xl{
-        grid-template-columns: auto 1200px auto;
+        // grid-template-columns: auto 1200px auto;
     }
 
     >div {
@@ -18,7 +19,7 @@
         @include md {
             display: grid;
             gap: 10px;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: 15px auto auto 15px;
             grid-template-areas:
                 ". m1 m2 ."
                 ". m3 m4 ."
@@ -38,12 +39,38 @@
                 grid-area: m1;
 
             }
+
+            p{
+                padding: 18px;
+            }
+          
+        h2{
+            padding-top: 15px;
+            padding: 18px;
+        }
+            button{
+                margin-bottom: 25px;
+                margin-left: 18px;
+            }
             }
 
             #m2 {
                 background-color: $seabeige;
                 @include md {
                     grid-area: m2;
+                }
+
+                p{
+                    padding: 18px;
+                }
+              
+            h2{
+                padding-top: 15px;
+                padding: 18px;
+            }
+                button{
+                    margin-bottom: 25px;
+                    margin-left: 18px;
                 }
             }
 
@@ -52,6 +79,19 @@
                 @include md {
                     grid-area: m3;
                 }
+
+                p{
+                    padding: 18px;
+                }
+              
+            h2{
+                padding-top: 15px;
+                padding: 18px;
+            }
+                button{
+                    margin-bottom: 25px;
+                    margin-left: 18px;
+                }
             }
 
             #m4 {
@@ -59,12 +99,48 @@
                 @include md {
                     grid-area: m4;
                 }
+
+                p{
+                    padding: 18px;
+                }
+              
+            h2{
+                padding-top: 15px;
+                padding: 18px;
+            }
+                button{
+                    margin-bottom: 25px;
+                    margin-left: 18px;
+                }
             }
 
             #m5 {
                 background-color: $seabeige;
+
                 @include md {
+                    display: inline-block;
+                    margin-left: auto;
+                    margin-right: auto;
                     grid-area: m5;
+                    width: 50%;
+          
+                }
+
+                @include lg{
+                    width: 100%;
+                }
+
+                p{
+                    padding: 18px;
+                }
+              
+            h2{
+                padding-top: 15px;
+                padding: 18px;
+            }
+                button{
+                    margin-bottom: 25px;
+                    margin-left: 18px;
                 }
             }
         }
