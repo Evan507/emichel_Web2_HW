@@ -27,8 +27,8 @@
         }
             #Money{
             display: grid;
-            gap: 30px;
-            grid-template-columns: auto 40% 40% auto;
+            gap: 15px;
+            grid-template-columns: 15px auto auto 15px;
             grid-template-areas: ". Donate Shop .";
 
             grid-area: Money;
@@ -119,15 +119,39 @@ align-content: space-between;
     #Donate{
         background-color: $darkteal;
         grid-area: Donate;
-        padding: 20px;
+        // padding: 20px;
         margin-bottom: 16px;
+
+        @include md{
+            padding-bottom: 40px;
+            padding-top: 45px;
+            // padding-left: 15px;
+            padding-right: auto;
+            font-size: rem-calc(20);
+            button{
+                font-family: 'Overpass', sans-serif;
+                font-size: rem-calc(14);
+            }
+        }
     }
 
     #Shop{
         background-color: $darkteal;
         grid-area: Shop;
-        padding: 20px;
+        // padding: 20px;
         margin-bottom: 16px;
+
+        @include md{
+            padding-bottom: 40px;
+            padding-top: 45px;
+            // padding-left: 15px;
+            padding-right: auto;
+            font-size: rem-calc(20);
+            button{
+                font-family: 'Overpass', sans-serif;
+                font-size: rem-calc(14);
+            }
+        }
     }
 
     h1{

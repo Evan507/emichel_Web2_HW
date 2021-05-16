@@ -618,8 +618,8 @@ body #footer {
   }
   #Info > div #Money {
     display: grid;
-    gap: 30px;
-    grid-template-columns: auto 40% 40% auto;
+    gap: 15px;
+    grid-template-columns: 15px auto auto 15px;
     grid-template-areas: ". Donate Shop .";
     grid-area: Money;
     padding-bottom: 40px;
@@ -678,14 +678,36 @@ body #footer {
 #Info #Donate {
   background-color: #344F52;
   grid-area: Donate;
-  padding: 20px;
   margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  #Info #Donate {
+    padding-bottom: 40px;
+    padding-top: 45px;
+    padding-right: auto;
+    font-size: 1.25rem;
+  }
+  #Info #Donate button {
+    font-family: "Overpass", sans-serif;
+    font-size: 0.875rem;
+  }
 }
 #Info #Shop {
   background-color: #344F52;
   grid-area: Shop;
-  padding: 20px;
   margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  #Info #Shop {
+    padding-bottom: 40px;
+    padding-top: 45px;
+    padding-right: auto;
+    font-size: 1.25rem;
+  }
+  #Info #Shop button {
+    font-family: "Overpass", sans-serif;
+    font-size: 0.875rem;
+  }
 }
 #Info h1 {
   font-family: "Chivo", sans-serif;
