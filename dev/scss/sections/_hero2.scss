@@ -10,7 +10,12 @@
 
     @include md {
         grid-template-areas: ". hero2 .";
-        grid-template-columns: 50px auto 50px;
+        grid-template-columns: 0px auto 0px;
+    }
+
+    @include md {
+
+        grid-template-columns: 15px auto 15px;
     }
 
     @include xl{

@@ -388,9 +388,6 @@ body article {
 body #main {
   padding: 10px;
 }
-body #hero2 {
-  padding: 10px;
-}
 body li {
   padding: 10px;
 }
@@ -589,9 +586,6 @@ body article {
 body #main {
   padding: 10px;
 }
-body #hero2 {
-  padding: 10px;
-}
 body li {
   padding: 10px;
 }
@@ -737,7 +731,12 @@ body #footer {
 @media (min-width: 768px) {
   #hero2 {
     grid-template-areas: ". hero2 .";
-    grid-template-columns: 50px auto 50px;
+    grid-template-columns: 0px auto 0px;
+  }
+}
+@media (min-width: 768px) {
+  #hero2 {
+    grid-template-columns: 15px auto 15px;
   }
 }
 @media (min-width: 1200px) {
