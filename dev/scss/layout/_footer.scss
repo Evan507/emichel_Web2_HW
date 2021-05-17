@@ -104,15 +104,19 @@
 #copyright{
     grid-area: copyright;
 
+    margin-right: 15px;
+margin-bottom: 35px;
+margin-left: 15px;
+
 @include md{
-    padding-right: 200px;
-    padding-left: 45px;
+    margin-right: 200px;
+    margin-left: 45px;
     margin-top: 0px;
 }
 
 @include lg{
-    padding-right: 150px;
-    padding-left: 45px;
+    margin-right: 150px;
+    margin-left: 45px;
 }
 
 }
@@ -120,19 +124,25 @@
 #address{
 grid-area: address;
 
+border-bottom: 2px $seabeige solid;
+
+margin-right: 15px;
+margin-bottom: 35px;
+margin-left: 15px;
+padding-bottom: 10px;
 
 
 @include md{
-    padding-right: 200px;
-    padding-bottom: 35px;
-    padding-left: 45px;
+    margin-right: 200px;
+    margin-bottom: 35px;
+    margin-left: 45px;
 }
 
 
 @include lg{
-    padding-right: 150px;
-    padding-bottom: 35px;
-    padding-left: 45px;
+    margin-right: 150px;
+    margin-bottom: 35px;
+    margin-left: 45px;
 }
 
 

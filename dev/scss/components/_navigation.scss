@@ -1,3 +1,25 @@
 /* =============
     Navigation
 ============= */
+
+
+    #nav-container{
+    
+         ul{
+             li{
+                 a:link, a:visited{
+                     color: $seabeige;
+              
+                 }
+                 
+                 a:hover, a:active{
+                     color: $seafoam;
+                   
+                 }
+
+                 border: none;
+                 text-decoration: none;
+             }
+             }
+     }
+    
