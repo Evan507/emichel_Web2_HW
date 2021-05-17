@@ -382,19 +382,12 @@ body ul {
 body ul li {
   list-style: none;
 }
-body article {
-  padding: 10px;
-}
 body #main {
   padding: 10px;
 }
 body li {
   padding: 10px;
 }
-body #footer {
-  padding: 10px;
-}
-
 /* =============
     Typography
 ============= */
@@ -528,23 +521,113 @@ input {
     Footer
 ============= */
 #footer {
-  color: #fff;
+  padding-bottom: 30px;
+  color: #CAD2C5;
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". footer .";
+  grid-template-areas: ". address ." ". copyright ." ". news ." ". social .";
+  grid-area: footer;
   background-color: #344F52;
 }
-#footer > div {
-  grid-area: footer;
+@media (min-width: 768px) {
+  #footer {
+    grid-template-columns: 50% auto;
+    grid-template-areas: "address news" "copyright social";
+  }
 }
-#footer h2 {
+@media (min-width: 992px) {
+  #footer {
+    grid-template-columns: 30% auto 30%;
+    grid-template-areas: "address news social" "copyright . .";
+  }
+}
+@media (min-width: 1200px) {
+  #footer {
+    grid-template-columns: 30% auto 30%;
+  }
+}
+#footer h3 {
   font-family: "Chivo", sans-serif;
+  font-size: 1.25rem;
+  padding-bottom: 15px;
+  padding-top: 20px;
 }
-#footer #social {
+#footer #icons {
   display: flex;
 }
-#footer #social ul li {
-  color: #fff;
+#footer article {
+  font-size: 0.75rem;
+}
+
+#news {
+  grid-area: news;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+@media (min-width: 768px) {
+  #news {
+    margin-right: 15px;
+  }
+}
+#news button {
+  height: 50px;
+  font-size: 0.75rem;
+  margin-left: auto;
+}
+#news input {
+  font-size: 0.875rem;
+  height: 50px;
+  padding-right: 100px;
+  margin-bottom: 15px;
+}
+@media (min-width: 1200px) {
+  #news {
+    padding-right: 25px;
+  }
+}
+
+#copyright {
+  grid-area: copyright;
+}
+@media (min-width: 768px) {
+  #copyright {
+    padding-right: 200px;
+    padding-left: 45px;
+  }
+}
+
+#address {
+  grid-area: address;
+}
+@media (min-width: 768px) {
+  #address {
+    padding-right: 200px;
+    padding-bottom: 35px;
+    padding-left: 45px;
+  }
+}
+
+#social {
+  grid-area: social;
+}
+#social h3 {
+  padding: 5px;
+  padding-top: 20px;
+}
+@media (min-width: 1200px) {
+  #social {
+    margin-left: 145px;
+    padding-right: 0px;
+    padding-left: 25px;
+  }
+}
+@media (min-width: 992px) {
+  #social {
+    margin-left: 145px;
+    padding-right: 0px;
+    padding-left: 15px;
+  }
 }
 
 /* =============
@@ -580,19 +663,12 @@ body ul {
 body ul li {
   list-style: none;
 }
-body article {
-  padding: 10px;
-}
 body #main {
   padding: 10px;
 }
 body li {
   padding: 10px;
 }
-body #footer {
-  padding: 10px;
-}
-
 /* =============
     ImportantInfo
 ============= */
@@ -683,6 +759,7 @@ body #footer {
   #Info #Donate {
     padding-bottom: 40px;
     padding-top: 45px;
+    padding-left: 15px;
     padding-right: auto;
     font-size: 1.25rem;
   }
@@ -700,6 +777,7 @@ body #footer {
   #Info #Shop {
     padding-bottom: 40px;
     padding-top: 45px;
+    padding-left: 15px;
     padding-right: auto;
     font-size: 1.25rem;
   }
