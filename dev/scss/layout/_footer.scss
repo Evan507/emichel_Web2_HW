@@ -93,6 +93,7 @@
         height: 50px;
         padding-right: 100px;
         margin-bottom: 15px;
+        background-color: $seabeige;
     }
 
     @include xl{
@@ -105,6 +106,12 @@
 
 @include md{
     padding-right: 200px;
+    padding-left: 45px;
+    margin-top: 0px;
+}
+
+@include lg{
+    padding-right: 150px;
     padding-left: 45px;
 }
 
@@ -120,6 +127,15 @@ grid-area: address;
     padding-bottom: 35px;
     padding-left: 45px;
 }
+
+
+@include lg{
+    padding-right: 150px;
+    padding-bottom: 35px;
+    padding-left: 45px;
+}
+
+
 }
 
 #social{
@@ -140,6 +156,18 @@ grid-area: address;
         margin-left: 145px;
         padding-right: 0px;
         padding-left: 15px;
+    }
+
+    ul{
+        li{
+            a:link, a:visited{
+                color: $seabeige;
+            }
+            
+            a:hover, a:active{
+                color: $seafoam;
+            }
+        }
     }
 }
 
