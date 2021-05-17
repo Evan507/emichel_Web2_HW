@@ -438,9 +438,13 @@ textarea {
 ============= */
 #logo {
   display: grid;
-  grid-template-columns: 100px auto;
-  grid-template-areas: "logo .";
+  grid-template-columns: 100px auto 100px;
+  grid-template-areas: "logo . Navigation";
   background-color: #344F52;
+}
+#logo #dropdown {
+  color: #CAD2C5;
+  font-size: 1.875rem;
 }
 
 #search {
@@ -515,6 +519,10 @@ input {
   input {
     font-size: 2.625rem;
   }
+}
+
+#Navigation {
+  grid-area: Navigation;
 }
 
 /* =============
