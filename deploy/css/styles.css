@@ -446,43 +446,42 @@ textarea {
     Navigation
 ============= */
 #nav-container {
+  background-color: #CAD2C5;
   display: none;
   padding-top: 15px;
-  background-color: #CAD2C5;
 }
 #nav-container ul li {
-  border-bottom: #344F52 1px solid;
+  border: none;
   display: flex;
   justify-content: flex-end;
-  border: none;
   text-decoration: none;
 }
 #nav-container ul li a:link, #nav-container ul li a:visited {
-  font-family: "Chivo", sans-serif;
-  color: #344F52;
-  text-decoration: none;
   border-bottom: #344F52 1px solid;
+  color: #344F52;
+  font-family: "Chivo", sans-serif;
   font-size: 1.875rem;
+  text-decoration: none;
 }
 @media (min-width: 992px) {
   #nav-container ul li a:link, #nav-container ul li a:visited {
     font-size: 1.5625rem;
-    padding-right: 30px;
     padding-left: 0px;
+    padding-right: 30px;
   }
 }
 #nav-container ul li a:hover, #nav-container ul li a:active {
-  font-family: "Chivo", sans-serif;
   border-bottom: #344F52 1px solid;
   color: #83AA8C;
-  text-decoration: none;
+  font-family: "Chivo", sans-serif;
   font-size: 1.875rem;
+  text-decoration: none;
 }
 @media (min-width: 992px) {
   #nav-container ul li a:hover, #nav-container ul li a:active {
     font-size: 1.5625rem;
-    padding-right: 30px;
     padding-left: 0px;
+    padding-right: 30px;
   }
 }
 
@@ -575,6 +574,16 @@ header {
   height: 50px;
   font-size: 0.75rem;
   margin-left: auto;
+}
+@media (min-width: 576px) {
+  #news button {
+    margin-right: 25px;
+  }
+}
+@media (min-width: 768px) {
+  #news button {
+    margin-right: 0px;
+  }
 }
 #news input {
   font-size: 0.875rem;
@@ -945,26 +954,26 @@ article {
   gap: 10px;
 }
 #main > div {
-  margin-left: 0px;
   grid-area: main;
+  margin-left: 0px;
 }
 @media (min-width: 768px) {
   #main > div {
     display: grid;
     gap: 10px;
-    grid-template-columns: 15px auto auto 15px;
     grid-template-areas: ". m1 m2 ." ". m3 m4 ." ". m5 m5 .";
+    grid-template-columns: 15px auto auto 15px;
   }
 }
 @media (min-width: 992px) {
   #main > div {
-    grid-template-columns: repeat(6, 1fr);
     grid-template-areas: "m1 m1 m2 m2 m3 m3" ". m4 m4 m5 m5 .";
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 #main > div #m1 {
-  margin-bottom: 15px;
   background-color: #CAD2C5;
+  margin-bottom: 15px;
 }
 @media (min-width: 768px) {
   #main > div #m1 {
@@ -975,16 +984,16 @@ article {
   padding: 18px;
 }
 #main > div #m1 h2 {
-  padding-top: 15px;
   padding: 18px;
+  padding-top: 15px;
 }
 #main > div #m1 button {
   margin-bottom: 25px;
   margin-left: 18px;
 }
 #main > div #m2 {
-  margin-bottom: 15px;
   background-color: #CAD2C5;
+  margin-bottom: 15px;
 }
 @media (min-width: 768px) {
   #main > div #m2 {
@@ -994,84 +1003,85 @@ article {
 #main > div #m2 p {
   padding: 18px;
 }
-#main > div #m2 h2 {
-  padding-top: 15px;
+#main > div h2 {
   padding: 18px;
+  padding-top: 15px;
 }
-#main > div #m2 button {
+#main > div button {
   margin-bottom: 25px;
   margin-left: 18px;
 }
-#main > div #m3 {
-  margin-bottom: 15px;
+#main #m3 {
   background-color: #CAD2C5;
+  margin-bottom: 15px;
 }
 @media (min-width: 768px) {
-  #main > div #m3 {
+  #main #m3 {
     grid-area: m3;
   }
 }
-#main > div #m3 p {
+#main #m3 p {
   padding: 18px;
 }
-#main > div #m3 h2 {
+#main #m3 h2 {
+  padding: 18px;
   padding-top: 15px;
-  padding: 18px;
 }
-#main > div #m3 button {
+#main #m3 button {
   margin-bottom: 25px;
   margin-left: 18px;
 }
-#main > div #m4 {
-  margin-bottom: 15px;
+#main #m4 {
   background-color: #CAD2C5;
+  margin-bottom: 15px;
 }
 @media (min-width: 768px) {
-  #main > div #m4 {
+  #main #m4 {
     grid-area: m4;
   }
 }
-#main > div #m4 p {
+#main #m4 p {
   padding: 18px;
 }
-#main > div #m4 h2 {
+#main #m4 h2 {
+  padding: 18px;
   padding-top: 15px;
-  padding: 18px;
 }
-#main > div #m4 button {
+#main #m4 button {
   margin-bottom: 25px;
   margin-left: 18px;
 }
-#main > div #m5 {
-  margin-bottom: 15px;
+#main #m5 {
   background-color: #CAD2C5;
+  margin-bottom: 15px;
 }
 @media (min-width: 768px) {
-  #main > div #m5 {
+  #main #m5 {
     display: inline-block;
+    grid-area: m5;
     margin-left: auto;
     margin-right: auto;
-    grid-area: m5;
     width: 50%;
   }
 }
 @media (min-width: 992px) {
-  #main > div #m5 {
+  #main #m5 {
     width: 100%;
   }
 }
-#main > div #m5 p {
+#main #m5 p {
   padding: 18px;
 }
-#main > div #m5 h2 {
+#main #m5 h2 {
+  padding: 18px;
   padding-top: 15px;
-  padding: 18px;
 }
-#main > div #m5 button {
+#main #m5 button {
   margin-bottom: 25px;
   margin-left: 18px;
 }
-#main h2 {
+
+h2 {
   font-family: "Chivo", sans-serif;
 }
 
@@ -1080,9 +1090,9 @@ article {
 ============= */
 #hero {
   background-image: url("../img/hero/hero.jpg");
-  height: 500px;
   background-position: center;
   background-size: cover;
+  height: 500px;
 }
 @media (min-width: 768px) {
   #hero {
@@ -1101,9 +1111,9 @@ article {
 }
 
 #search {
-  padding-top: 125px;
   font-family: "Chivo", sans-serif;
   font-weight: 700px;
+  padding-top: 125px;
 }
 #search > div {
   display: flex;
@@ -1148,14 +1158,14 @@ input {
 }
 
 button {
-  color: #fff;
   background-color: #83AA8C;
   border: none;
   border-radius: 5px;
-  padding-top: 10px;
+  color: #fff;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 10px;
 }
 @media (min-width: 992px) {
   button {

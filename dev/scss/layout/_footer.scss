@@ -81,6 +81,15 @@
     }
 
     button{
+
+    @include sm{
+               margin-right: 25px;
+    }
+    
+    @include md{
+        margin-right: 0px;
+    }
+    
     height: 50px;
     // padding: 10px;
      font-size: rem-calc(12);

@@ -1,78 +1,59 @@
-#search{
-    padding-top: 125px;
+#search {
+	font-family: 'Chivo', sans-serif;
+	font-weight: 700px;
+	padding-top: 125px;
+	>div {
+		// grid-template-areas: ". search .";
+		// grid-template-columns: auto 60% auto;
+		// margin-top: 15px;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+		@include lg {
+			// grid-template-columns: auto 80% auto;
+			// margin-top: 25px;
+			margin-bottom: 25px;
+		}
+		@include md {
+			// grid-template-columns: auto 75% auto;
+			// margin-top: 20px;
+			margin-bottom: 25px;
+		}
+		@include xl {
+			// grid-template-columns: auto 85% auto;
+			margin-bottom: 25px;
+		}
+		// >div {
+			//     grid-area: search;
+		}
+	}
 
-    font-family: 'Chivo', sans-serif;
-    font-weight: 700px;
 
-    >div{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-        // margin-top: 15px;
-    
-        // grid-template-columns: auto 60% auto;
-        // grid-template-areas: ". search .";
-        
-    
-        @include lg{
-            // grid-template-columns: auto 80% auto; 
-            margin-bottom: 25px;
-            // margin-top: 25px;
-      
-        }
-    
-        @include md{
-            // grid-template-columns: auto 75% auto; 
-            margin-bottom: 25px;
-            // margin-top: 20px;
-
-        }
-    
-        @include xl{
-            // grid-template-columns: auto 85% auto; 
-            margin-bottom: 25px;
-  
-        }
-    
-        // >div{
-        //     grid-area: search;
-        // }
-    }
-  
-
+input {
+	border: none;
+	border-bottom: solid 1px $darkteal;
+	width: 80%;
+	@include md {
+		font-size: rem-calc(36);
+	}
+	@include lg {
+		font-size: rem-calc(42);
+	}
+	@include xl {
+		font-size: rem-calc(42);
+	}
 }
-
-input{
-    border: none;
-    border-bottom: solid 1px $darkteal;
-    width: 80%;
-
-    @include md{
-        font-size: rem-calc(36);
-    }
-
-    @include lg{
-        font-size: rem-calc(42);
-    }
-
-    @include xl{
-        font-size: rem-calc(42);
-    }
-}
-
-
-button{
-    color: $white;
-    background-color: $seafoam;
-    border: none;
-    border-radius: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    @include lg{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+button {
+	background-color: $seafoam;
+	border: none;
+	border-radius: 5px;
+	color: $white;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	@include lg {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }

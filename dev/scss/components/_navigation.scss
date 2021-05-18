@@ -1,58 +1,43 @@
 /* =============
     Navigation
 ============= */
-
-
-    #nav-container{
-        display: none;
-        // position: fixed;
-        // width: 100%;
-    
-        padding-top: 15px;
-        background-color: $seabeige;
-    
-         ul{
-            
-             li{
-                border-bottom: $darkteal 1px solid;
-                display: flex;
-                justify-content: flex-end;
-
-                 a:link, a:visited{
-                    font-family: 'Chivo', sans-serif;
-                     color: $darkteal;
-                     text-decoration: none;
-                     border-bottom: $darkteal 1px solid;
-                    
-                     font-size: rem-calc(30);
-
-                     @include lg{
-                         font-size: rem-calc(25);
-                         padding-right: 30px;
-                         padding-left: 0px;
-                     }
-              
-                 }
-                 
-                 a:hover, a:active{
-                    font-family: 'Chivo', sans-serif;
-                    border-bottom: $darkteal 1px solid;
-                     color: $seafoam;
-                     text-decoration: none;
-
-                     font-size: rem-calc(30);
-
-                     @include lg{
-                        font-size: rem-calc(25);
-                        padding-right: 30px;
-                        padding-left: 0px;
-                    }
-                   
-                 }
-
-                 border: none;
-                 text-decoration: none;
-             }
-             }
-     }
-    
+#nav-container {
+	// position: fixed;
+	// width: 100%;
+	background-color: $seabeige;
+	display: none;
+	padding-top: 15px;
+	ul {
+		li {
+			border: none;
+			// border-bottom: $darkteal 1px solid;
+			display: flex;
+			justify-content: flex-end;
+			text-decoration: none;
+			a:link, a:visited {
+				border-bottom: $darkteal 1px solid;
+				color: $darkteal;
+				font-family: 'Chivo', sans-serif;
+				font-size: rem-calc(30);
+				text-decoration: none;
+				@include lg {
+					font-size: rem-calc(25);
+					padding-left: 0px;
+					padding-right: 30px;
+				}
+			}
+			a:hover, a:active {
+				border-bottom: $darkteal 1px solid;
+				color: $seafoam;
+				font-family: 'Chivo', sans-serif;
+				font-size: rem-calc(30);
+				text-decoration: none;
+				@include lg {
+					font-size: rem-calc(25);
+					padding-left: 0px;
+					padding-right: 30px;
+				}
+			}
+		}
+	}
+}
