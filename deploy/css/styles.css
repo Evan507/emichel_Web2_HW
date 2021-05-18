@@ -433,30 +433,59 @@ textarea {
 /* =============
     Navigation
 ============= */
+#nav-container {
+  background-color: #CAD2C5;
+}
 #nav-container ul li {
+  display: flex;
+  justify-content: flex-end;
   border: none;
   text-decoration: none;
 }
 #nav-container ul li a:link, #nav-container ul li a:visited {
-  color: #CAD2C5;
+  font-family: "Chivo", sans-serif;
+  color: #344F52;
+  text-decoration: none;
+}
+@media (min-width: 992px) {
+  #nav-container ul li a:link, #nav-container ul li a:visited {
+    font-size: 20px;
+    padding-right: 30px;
+    padding-left: 0px;
+  }
 }
 #nav-container ul li a:hover, #nav-container ul li a:active {
+  font-family: "Chivo", sans-serif;
   color: #83AA8C;
+  text-decoration: none;
+}
+@media (min-width: 992px) {
+  #nav-container ul li a:hover, #nav-container ul li a:active {
+    font-size: 20px;
+    padding-right: 30px;
+    padding-left: 0px;
+  }
 }
 
 /* =============
     Header
 ============= */
 #logo {
-  display: grid;
-  grid-template-columns: 100px auto 100px;
-  grid-template-areas: "logo . Navigation";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #344F52;
 }
 #logo #dropdown {
   color: #CAD2C5;
   font-size: 1.875rem;
   cursor: pointer;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  #logo #dropdown {
+    padding-right: 30px;
+  }
 }
 
 #search {
@@ -467,15 +496,18 @@ textarea {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  margin-top: 15px;
 }
 @media (min-width: 992px) {
   #search > div {
     margin-bottom: 25px;
+    margin-top: 25px;
   }
 }
 @media (min-width: 768px) {
   #search > div {
     margin-bottom: 25px;
+    margin-top: 20px;
   }
 }
 @media (min-width: 1200px) {
@@ -485,22 +517,9 @@ textarea {
 }
 
 #logo {
-  grid-area: logo;
   padding: 10px;
   padding-left: 15px;
-  margin-bottom: 15px;
 }
-@media (min-width: 992px) {
-  #logo {
-    margin-bottom: 25px;
-  }
-}
-@media (min-width: 1200px) {
-  #logo {
-    margin-bottom: 25px;
-  }
-}
-
 button {
   color: #fff;
   background-color: #83AA8C;
@@ -531,10 +550,6 @@ input {
   input {
     font-size: 2.625rem;
   }
-}
-
-#Navigation {
-  grid-area: Navigation;
 }
 
 /* =============

@@ -15,21 +15,32 @@
 // }
 
 #logo{
-    display: grid;
-    grid-template-columns: 100px auto 100px;
-    grid-template-areas: "logo . Navigation";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // display: grid;
+    // grid-template-columns: 100px auto 100px;
+    // grid-template-areas: "logo . Navigation";
     background-color: $darkteal;
+
 
  #dropdown{
      color: $seabeige;
      font-size: rem-calc(30);
      cursor: pointer;
+     align-items: center;
+
+     @include lg{
+         padding-right: 30px;
+     }
  }
 
  
 }
 
 #search{
+
+
     font-family: 'Chivo', sans-serif;
     font-weight: 700px;
 
@@ -37,6 +48,7 @@
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
+        margin-top: 15px;
     
         // grid-template-columns: auto 60% auto;
         // grid-template-areas: ". search .";
@@ -45,12 +57,14 @@
         @include lg{
             // grid-template-columns: auto 80% auto; 
             margin-bottom: 25px;
+            margin-top: 25px;
       
         }
     
         @include md{
             // grid-template-columns: auto 75% auto; 
             margin-bottom: 25px;
+            margin-top: 20px;
 
         }
     
@@ -70,18 +84,18 @@
 
 
 #logo{
-    grid-area:logo;
+    // grid-area:logo;
     padding: 10px;
     padding-left: 15px;
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
 
     @include lg{
-        margin-bottom: 25px;
+        // margin-bottom: 0px;
     }
 
 
     @include xl{
-        margin-bottom: 25px;
+        // margin-bottom: 25px;
     }
 }
 
@@ -116,10 +130,10 @@ input{
     }
 }
 
-#Navigation{
-grid-area: Navigation;
+// #Navigation{
+// grid-area: Navigation;
 
-    }
+//     }
 
 
    

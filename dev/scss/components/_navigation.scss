@@ -4,16 +4,40 @@
 
 
     #nav-container{
+
+
+        background-color: $seabeige;
     
          ul{
+            
              li{
+                display: flex;
+                justify-content: flex-end;
+
                  a:link, a:visited{
-                     color: $seabeige;
+                    font-family: 'Chivo', sans-serif;
+                     color: $darkteal;
+                     text-decoration: none;
+                    
+
+                     @include lg{
+                         font-size: 20px;
+                         padding-right: 30px;
+                         padding-left: 0px;
+                     }
               
                  }
                  
                  a:hover, a:active{
+                    font-family: 'Chivo', sans-serif;
                      color: $seafoam;
+                     text-decoration: none;
+
+                     @include lg{
+                        font-size: 20px;
+                        padding-right: 30px;
+                        padding-left: 0px;
+                    }
                    
                  }
 
