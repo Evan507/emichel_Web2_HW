@@ -396,6 +396,10 @@ body ul li {
 body li {
   padding: 10px;
 }
+body button {
+  cursor: pointer;
+}
+
 /* =============
     Typography
 ============= */
@@ -541,6 +545,12 @@ button {
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media (min-width: 992px) {
+  button {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 input {
@@ -753,6 +763,10 @@ body ul li {
 body li {
   padding: 10px;
 }
+body button {
+  cursor: pointer;
+}
+
 /* =============
     ImportantInfo
 ============= */
@@ -782,7 +796,7 @@ body li {
     grid-template-columns: 50% 50%;
     grid-template-areas: "Questions Events";
     grid-area: Headlines;
-    margin-bottom: 20px;
+    margin-bottom: 55px;
   }
   #Info > div #Money {
     display: grid;
@@ -799,7 +813,7 @@ body li {
     grid-template-columns: 50% auto;
     grid-template-areas: "Questions Events";
     grid-area: Headlines;
-    margin-bottom: 20px;
+    margin-bottom: 65px;
   }
   #Info > div #Money {
     display: grid;
@@ -811,6 +825,7 @@ body li {
   }
 }
 #Info #Questions {
+  cursor: pointer;
   background-color: #52796F;
   color: #fff;
   padding: 20px;
@@ -823,6 +838,7 @@ body li {
   margin-left: auto;
 }
 #Info #Events {
+  cursor: pointer;
   background-color: #83AA8C;
   color: #fff;
   padding: 20px;
