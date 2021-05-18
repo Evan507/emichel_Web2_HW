@@ -251,7 +251,7 @@
       "oF" : 2
     },
     "\/dev\/js\/scripts.js" : {
-      "bF" : 0,
+      "bF" : 4,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
@@ -470,6 +470,22 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/package-lock-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/package.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/package-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
     },
     "\/README.md" : {
       "cB" : 0,
@@ -2569,7 +2585,7 @@
       "ENVIRONMENT:::$NODE_ENV"
     ],
     "rollupTreeshakingEnabled" : 1,
-    "skippedFoldersString" : "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, node_modules",
+    "skippedFoldersString" : "\/storage\/framework\/sessions,_logs,logs,log,.idea,_cache,cache",
     "sourceFolderName" : "source",
     "susyVersion" : 3,
     "tsAllowSyntheticDefaultImports" : 0,

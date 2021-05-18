@@ -456,6 +456,7 @@ textarea {
 #logo #dropdown {
   color: #CAD2C5;
   font-size: 1.875rem;
+  cursor: pointer;
 }
 
 #search {
