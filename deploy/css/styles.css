@@ -446,10 +446,11 @@ textarea {
   font-family: "Chivo", sans-serif;
   color: #344F52;
   text-decoration: none;
+  font-size: 1.875rem;
 }
 @media (min-width: 992px) {
   #nav-container ul li a:link, #nav-container ul li a:visited {
-    font-size: 20px;
+    font-size: 1.5625rem;
     padding-right: 30px;
     padding-left: 0px;
   }
@@ -458,10 +459,11 @@ textarea {
   font-family: "Chivo", sans-serif;
   color: #83AA8C;
   text-decoration: none;
+  font-size: 1.875rem;
 }
 @media (min-width: 992px) {
   #nav-container ul li a:hover, #nav-container ul li a:active {
-    font-size: 20px;
+    font-size: 1.5625rem;
     padding-right: 30px;
     padding-left: 0px;
   }
@@ -478,13 +480,15 @@ textarea {
 }
 #logo #dropdown {
   color: #CAD2C5;
-  font-size: 1.875rem;
+  font-size: 4.375rem;
   cursor: pointer;
   align-items: center;
+  padding-right: 30px;
 }
 @media (min-width: 992px) {
   #logo #dropdown {
     padding-right: 30px;
+    font-size: 2.5rem;
   }
 }
 

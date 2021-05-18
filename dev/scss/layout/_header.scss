@@ -26,12 +26,14 @@
 
  #dropdown{
      color: $seabeige;
-     font-size: rem-calc(30);
+     font-size: rem-calc(70);
      cursor: pointer;
      align-items: center;
+     padding-right: 30px;
 
      @include lg{
          padding-right: 30px;
+         font-size: rem-calc(40);
      }
  }
 
