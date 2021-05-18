@@ -4,13 +4,17 @@
 
 
     #nav-container{
-
-
+        display: none;
+        // position: fixed;
+        // width: 100%;
+    
+        padding-top: 15px;
         background-color: $seabeige;
     
          ul{
             
              li{
+                border-bottom: $darkteal 1px solid;
                 display: flex;
                 justify-content: flex-end;
 
@@ -18,6 +22,7 @@
                     font-family: 'Chivo', sans-serif;
                      color: $darkteal;
                      text-decoration: none;
+                     border-bottom: $darkteal 1px solid;
                     
                      font-size: rem-calc(30);
 
@@ -31,6 +36,7 @@
                  
                  a:hover, a:active{
                     font-family: 'Chivo', sans-serif;
+                    border-bottom: $darkteal 1px solid;
                      color: $seafoam;
                      text-decoration: none;
 
