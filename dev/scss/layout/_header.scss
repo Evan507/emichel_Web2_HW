@@ -7,11 +7,12 @@
 
 // }
 
-header{
+header {
     position: fixed;
     width: 100%;
 }
-#logo{
+
+#logo {
     // margin-bottom: 25px;
     // position: fixed;
     // width: 100%;
@@ -24,37 +25,37 @@ header{
     background-color: $darkteal;
 
 
- #dropdown{
-     color: $seabeige;
-     font-size: rem-calc(70);
-     cursor: pointer;
-     align-items: center;
-     padding-right: 30px;
+    #dropdown {
+        color: $seabeige;
+        font-size: rem-calc(70);
+        cursor: pointer;
+        align-items: center;
+        padding-right: 30px;
 
-     @include lg{
-         padding-right: 30px;
-         font-size: rem-calc(40);
-     }
- }
+        @include lg {
+            padding-right: 30px;
+            font-size: rem-calc(40);
+        }
+    }
 
- 
+
 }
 
 
 
 
-#logo{
+#logo {
     // grid-area:logo;
     padding: 10px;
     padding-left: 15px;
     // margin-bottom: 15px;
 
-    @include lg{
+    @include lg {
         // margin-bottom: 0px;
     }
 
 
-    @include xl{
+    @include xl {
         // margin-bottom: 25px;
     }
 }
@@ -68,8 +69,3 @@ header{
 // grid-area: Navigation;
 
 //     }
-
-
-   
-
-

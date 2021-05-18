@@ -2,93 +2,96 @@
     ImportantInfo
 ============= */
 
-#Info{
+#Info {
     // display: grid;
-  //  grid-template-columns: 16px auto 16px;
-   // grid-template-areas: ". Info .";
+    //  grid-template-columns: 16px auto 16px;
+    // grid-template-areas: ". Info .";
 
-    >div{
+    >div {
 
-        
-        
+
+
         //grid-area: Info;
 
-        #Headlines{
+        #Headlines {
             margin-bottom: 20px;
         }
 
-      @include md{
-        #Headlines{
-            display: grid;
-            grid-template-columns: auto 60%;
-            grid-template-areas: "Questions Events";
+        @include md {
+            #Headlines {
+                display: grid;
+                grid-template-columns: auto 60%;
+                grid-template-areas: "Questions Events";
 
-            grid-area: Headlines;
+                grid-area: Headlines;
 
-            margin-bottom: 20px;
- 
+                margin-bottom: 20px;
+
+            }
+
+            #Money {
+                display: grid;
+                gap: 15px;
+                grid-template-columns: 10px auto auto 10px;
+                grid-template-areas: ". Donate Shop .";
+
+                grid-area: Money;
+
+                padding-bottom: 40px;
+            }
+
+
+
+
         }
-            #Money{
-            display: grid;
-            gap: 15px;
-            grid-template-columns: 10px auto auto 10px;
-            grid-template-areas: ". Donate Shop .";
 
-            grid-area: Money;
 
-            padding-bottom: 40px;
-                 }
-
-        
-                
-    
-        }
-      
-        
     }
 
-    >div{
-        @include lg{
-            #Headlines{
+    >div {
+        @include lg {
+            #Headlines {
                 display: grid;
-                grid-template-columns:  50% 50%;
+                grid-template-columns: 50% 50%;
                 grid-template-areas: "Questions Events";
 
                 grid-area: Headlines;
 
                 margin-bottom: 55px;
-     
+
             }
-                #Money{
+
+            #Money {
                 display: grid;
-                gap:30px;
+                gap: 30px;
                 grid-template-columns: auto 40% 40% auto;
                 grid-template-areas: ". Donate Shop .";
 
                 grid-area: Money;
 
                 padding-bottom: 55px;
-                     }
-        
             }
+
+        }
     }
 
-    >div{
-        @include xl{
-            #Headlines{
+    >div {
+        @include xl {
+            #Headlines {
                 display: grid;
-                grid-template-columns:   50% auto;
+                grid-template-columns: 50% auto;
                 grid-template-areas: "Questions Events";
 
                 grid-area: Headlines;
 
                 margin-bottom: 65px;
-                
+
                 // margin: 20px;
             }
-                #Money{
+
+            #Money {
                 display: grid;
-                gap:30px;
+                gap: 30px;
                 grid-template-columns: auto 40% 40% auto;
                 grid-template-areas: ". Donate Shop .";
 
@@ -96,103 +99,105 @@
                 grid-area: Money;
 
                 padding-bottom: 65px;
-                     }
-        
             }
-    }
 
-    #Questions{
-        cursor: pointer;
-background-color: $greenteal;
-color: $white; 
-padding: 20px;
-display: flex;
-flex-wrap: wrap;
-align-content: space-between;
-
-padding-right:5px;
-
-        button{
-            margin-left: auto;
-           
         }
     }
 
-    #Events{
+    #Questions {
         cursor: pointer;
-background-color: $seafoam;
-color: $white; 
-padding: 20px;
-display: flex;
-flex-wrap: wrap;
-align-content: space-between;
+        background-color: $greenteal;
+        color: $white;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
 
-padding-right:5px;
+        padding-right: 5px;
 
-button{
-    margin-left: auto;
-}
+        button {
+            margin-left: auto;
+
+        }
     }
 
-    #Donate{
+    #Events {
+        cursor: pointer;
+        background-color: $seafoam;
+        color: $white;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+
+        padding-right: 5px;
+
+        button {
+            margin-left: auto;
+        }
+    }
+
+    #Donate {
         padding: 10px;
         background-color: $darkteal;
         grid-area: Donate;
         // padding: 20px;
         margin-bottom: 16px;
 
-        @include md{
+        @include md {
             padding-bottom: 40px;
             padding-top: 45px;
             padding-left: 15px;
             padding-right: auto;
             font-size: rem-calc(20);
-            button{
+
+            button {
                 font-family: 'Overpass', sans-serif;
                 font-size: rem-calc(14);
             }
         }
     }
 
-    #Shop{
+    #Shop {
         padding: 10px;
         background-color: $darkteal;
         grid-area: Shop;
         // padding: 20px;
         margin-bottom: 16px;
 
-        @include md{
+        @include md {
             padding-bottom: 40px;
             padding-top: 45px;
             padding-left: 15px;
             padding-right: auto;
             font-size: rem-calc(20);
-            button{
+
+            button {
                 font-family: 'Overpass', sans-serif;
                 font-size: rem-calc(14);
             }
         }
     }
 
-    h1{
+    h1 {
         font-family: 'Chivo', sans-serif;
-        color: $white; 
+        color: $white;
         padding-bottom: 10px;
     }
 
-    h2{
+    h2 {
         font-family: 'Chivo', sans-serif;
     }
 
-    
 
 
 
-    #arrow{
+
+    #arrow {
         color: $white;
         background-color: transparent;
         border: none;
-        
+
     }
-   
+
 }

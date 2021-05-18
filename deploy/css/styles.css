@@ -589,6 +589,7 @@ header {
   font-size: 0.875rem;
   height: 50px;
   padding-right: 100px;
+  padding-left: 10px;
   margin-bottom: 15px;
   background-color: #CAD2C5;
 }
@@ -662,10 +663,12 @@ header {
     padding-left: 15px;
   }
 }
-#social ul li a:link, #social ul li a:visited {
+#social ul li a:link,
+#social ul li a:visited {
   color: #CAD2C5;
 }
-#social ul li a:hover, #social ul li a:active {
+#social ul li a:hover,
+#social ul li a:active {
   color: #83AA8C;
 }
 

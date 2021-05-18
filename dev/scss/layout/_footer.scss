@@ -2,42 +2,43 @@
     Footer
 ============= */
 
-#footer{
-    
+#footer {
+
     padding-bottom: 30px;
-    color: $seabeige; 
+    color: $seabeige;
     display: grid;
     grid-template-columns: 16px auto 16px;
-    grid-template-areas: 
-    ". address ."
-    ". copyright ."
-    ". news ."
-    ". social .";;
+    grid-template-areas:
+        ". address ."
+        ". copyright ."
+        ". news ."
+        ". social .";
+    ;
 
     // >div{
     //     grid-area: footer;
     // 
 
-  
+
 
     // display: grid;
     grid-area: footer;
 
-    @include md{
+    @include md {
         // grid-area: footer;
         grid-template-columns: 50% auto;
-        grid-template-areas: 
-        "address news"
-        "copyright social";
+        grid-template-areas:
+            "address news"
+            "copyright social";
     }
 
-    @include lg{
+    @include lg {
         grid-template-columns: 30% auto 30%;
         grid-template-areas: "address news social"
-        "copyright . ."
+            "copyright . ."
     }
 
-    @include xl{
+    @include xl {
         grid-template-columns: 30% auto 30%;
 
         // padding-left: 230px;
@@ -45,149 +46,151 @@
     }
 
 
- 
+
 
     background-color: $darkteal;
 
-    h3{
+    h3 {
         font-family: 'Chivo', sans-serif;
         font-size: rem-calc(20);
         padding-bottom: 15px;
         padding-top: 20px;
     }
 
-    #icons{
+    #icons {
         display: flex;
 
 
     }
 
 
-    article{
+    article {
         font-size: rem-calc(12);
     }
-    
+
 }
 
-#news{
+#news {
     grid-area: news;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     // height: 50px
 
-    @include md{
+    @include md {
         margin-right: 15px;
     }
 
-    button{
+    button {
 
-    @include sm{
-               margin-right: 25px;
-    }
-    
-    @include md{
-        margin-right: 0px;
-    }
-    
-    height: 50px;
-    // padding: 10px;
-     font-size: rem-calc(12);
-     
-    margin-left: auto;
+        @include sm {
+            margin-right: 25px;
+        }
+
+        @include md {
+            margin-right: 0px;
+        }
+
+        height: 50px;
+        // padding: 10px;
+        font-size: rem-calc(12);
+
+        margin-left: auto;
     }
 
-    input{
+    input {
         font-size: rem-calc(14);
         height: 50px;
         padding-right: 100px;
+        padding-left: 10px;
         margin-bottom: 15px;
         background-color: $seabeige;
     }
 
-    @include xl{
+    @include xl {
         padding-right: 25px;
     }
 }
 
-#copyright{
+#copyright {
     grid-area: copyright;
 
     margin-right: 15px;
-margin-bottom: 35px;
-margin-left: 15px;
-
-@include md{
-    margin-right: 200px;
-    margin-left: 45px;
-    margin-top: 0px;
-}
-
-@include lg{
-    margin-right: 150px;
-    margin-left: 45px;
-}
-
-}
-
-#address{
-grid-area: address;
-
-border-bottom: 2px $seabeige solid;
-
-margin-right: 15px;
-margin-bottom: 35px;
-margin-left: 15px;
-padding-bottom: 10px;
-
-
-@include md{
-    margin-right: 200px;
     margin-bottom: 35px;
-    margin-left: 45px;
+    margin-left: 15px;
+
+    @include md {
+        margin-right: 200px;
+        margin-left: 45px;
+        margin-top: 0px;
+    }
+
+    @include lg {
+        margin-right: 150px;
+        margin-left: 45px;
+    }
+
 }
 
+#address {
+    grid-area: address;
 
-@include lg{
-    margin-right: 150px;
+    border-bottom: 2px $seabeige solid;
+
+    margin-right: 15px;
     margin-bottom: 35px;
-    margin-left: 45px;
-}
+    margin-left: 15px;
+    padding-bottom: 10px;
+
+
+    @include md {
+        margin-right: 200px;
+        margin-bottom: 35px;
+        margin-left: 45px;
+    }
+
+
+    @include lg {
+        margin-right: 150px;
+        margin-bottom: 35px;
+        margin-left: 45px;
+    }
 
 
 }
 
-#social{
+#social {
     grid-area: social;
 
-    h3{
-        padding:5px;
+    h3 {
+        padding: 5px;
         padding-top: 20px;
     }
 
-    @include xl{
+    @include xl {
         margin-left: 145px;
         padding-right: 0px;
         padding-left: 25px;
     }
 
-    @include lg{
+    @include lg {
         margin-left: 145px;
         padding-right: 0px;
         padding-left: 15px;
     }
 
-    ul{
-        li{
-            a:link, a:visited{
+    ul {
+        li {
+
+            a:link,
+            a:visited {
                 color: $seabeige;
             }
-            
-            a:hover, a:active{
+
+            a:hover,
+            a:active {
                 color: $seafoam;
             }
         }
     }
 }
-
-
