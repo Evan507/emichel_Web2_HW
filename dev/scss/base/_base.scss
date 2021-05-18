@@ -45,7 +45,14 @@ body{
 // }
 
 #main{
-    padding: 10px;
+   @include md{
+       padding: 15px;
+   }
+   
+   @include xl{
+       padding-left: 100px;
+       padding-right: 100px;
+   }
 }
 
 #hero2{

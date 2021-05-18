@@ -382,8 +382,16 @@ body ul {
 body ul li {
   list-style: none;
 }
-body #main {
-  padding: 10px;
+@media (min-width: 768px) {
+  body #main {
+    padding: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  body #main {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 body li {
   padding: 10px;
@@ -731,8 +739,16 @@ body ul {
 body ul li {
   list-style: none;
 }
-body #main {
-  padding: 10px;
+@media (min-width: 768px) {
+  body #main {
+    padding: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  body #main {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 body li {
   padding: 10px;
@@ -966,10 +982,10 @@ article {
     Main
 ============= */
 #main {
-  display: grid;
   gap: 10px;
 }
 #main > div {
+  margin-left: 0px;
   grid-area: main;
 }
 @media (min-width: 768px) {
